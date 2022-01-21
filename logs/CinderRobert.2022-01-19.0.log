@@ -1,0 +1,136 @@
+16:50:49[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 184593 (/home/soulspace/Documents/IDEA_Projects/Cinder/build/classes/java/main started by soulspace in /home/soulspace/Documents/IDEA_Projects/Cinder)
+16:50:49[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+16:50:49[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:50:49[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:50:49[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:50:49[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+16:50:49[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+16:50:50[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:50:50[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:50:50[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
+16:50:50[restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[xyz.soulspace.cinder]' package. Please check your configuration.
+16:50:50[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+16:50:50[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+16:50:50[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:50:50[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+16:50:50[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:50:50[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1361 ms
+16:50:51[restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+16:50:51[cluster-ClusterId{value='61e7d0ebcddf912fd10ff3bf', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: 拒绝连接 (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+16:50:51[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: af42460f-4c4c-494a-b58c-c399d63b06f4
+
+16:50:51[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1886705d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6d0062d7, org.springframework.security.web.header.HeaderWriterFilter@390196ae, org.springframework.security.web.csrf.CsrfFilter@6ab00cf5, org.springframework.security.web.authentication.logout.LogoutFilter@6d74440c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66c0827a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6b11d775, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15cff751, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21661799, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fda0dd4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ed682f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@484e0ae, org.springframework.security.web.session.SessionManagementFilter@410f7d8a, org.springframework.security.web.access.ExceptionTranslationFilter@26d8e414, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@150a16a6]
+16:50:51[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:50:51[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+16:50:51[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+16:50:51[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 2.902 seconds (JVM running for 3.803)
+16:50:56[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:03:51[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 192910 (/home/soulspace/Documents/IDEA_Projects/Cinder/build/classes/java/main started by soulspace in /home/soulspace/Documents/IDEA_Projects/Cinder)
+17:03:51[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:03:51[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:03:51[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:03:52[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:03:52[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+17:03:52[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 MongoDB repository interfaces.
+17:03:52[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:03:52[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:03:52[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+17:03:53[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:03:53[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:03:53[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:03:53[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:03:53[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:03:53[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1426 ms
+17:03:54[restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+17:03:54[cluster-ClusterId{value='61e7d3fa8e0f154c9a89d395', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: 拒绝连接 (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+17:03:54[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 666e6956-1fe6-4010-84c5-3ae74dc0c726
+
+17:03:54[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f098f64, org.springframework.security.web.context.SecurityContextPersistenceFilter@24dc90ae, org.springframework.security.web.header.HeaderWriterFilter@2672f462, org.springframework.security.web.csrf.CsrfFilter@195be488, org.springframework.security.web.authentication.logout.LogoutFilter@52d0e362, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6486987f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@406b386f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@635a4149, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@66b74115, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d5d7b9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d2d35e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fb90bde, org.springframework.security.web.session.SessionManagementFilter@4ff4265b, org.springframework.security.web.access.ExceptionTranslationFilter@6acdfbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14423465]
+17:03:54[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:03:54[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:03:54[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:03:54[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 3.102 seconds (JVM running for 3.899)
+17:04:00[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:39:27[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 212613 (/home/soulspace/Documents/IDEA_Projects/Cinder/build/classes/java/main started by soulspace in /home/soulspace/Documents/IDEA_Projects/Cinder)
+17:39:27[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:39:27[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:39:27[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:39:28[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:39:28[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+17:39:28[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 MongoDB repository interfaces.
+17:39:28[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:39:28[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:39:28[restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+17:39:28[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:39:28[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:39:28[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:39:28[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:39:28[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:39:28[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1386 ms
+17:39:29[restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+17:39:29[cluster-ClusterId{value='61e7dc51d4bc0b103cb7ea1b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.ConnectException: 拒绝连接 (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:107)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+17:39:29[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e46450fb-8a70-49c7-9fdd-6d9c20fdf267
+
+17:39:29[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11c4a9a8, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a78f83, org.springframework.security.web.header.HeaderWriterFilter@5acfa6fc, org.springframework.security.web.csrf.CsrfFilter@326d8de, org.springframework.security.web.authentication.logout.LogoutFilter@5e33f697, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6abf1ead, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4bfb57e3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12d82347, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e9df06c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ab1b9de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a81e31b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7327bfe0, org.springframework.security.web.session.SessionManagementFilter@5ed48b9e, org.springframework.security.web.access.ExceptionTranslationFilter@28e76bb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b39a120]
+17:39:30[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:39:30[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:39:30[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:39:30[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 2.998 seconds (JVM running for 3.981)
+17:39:33[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
