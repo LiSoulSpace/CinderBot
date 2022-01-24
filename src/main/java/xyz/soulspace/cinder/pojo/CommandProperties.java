@@ -6,11 +6,6 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * @Description: 指令名称以及别称
- * @author: MikuLink
- * @date: 2020/12/14 18:30
- **/
 @Getter
 @Setter
 public class CommandProperties {

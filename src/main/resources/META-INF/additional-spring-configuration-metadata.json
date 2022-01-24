@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "bot.admin",
+      "type": "java.lang.String",
+      "description": "Description for bot.admin."
+    },
+    {
+      "name": "bot.master",
+      "type": "java.lang.String",
+      "description": "Description for bot.master."
+    }
+  ]
+}
