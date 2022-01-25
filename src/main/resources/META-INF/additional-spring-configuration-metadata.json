@@ -9,6 +9,31 @@
       "name": "bot.master",
       "type": "java.lang.String",
       "description": "Description for bot.master."
+    },
+    {
+      "name": "bot.pwd",
+      "type": "java.lang.String",
+      "description": "Description for bot.pwd."
+    },
+    {
+      "name": "bot.account",
+      "type": "java.lang.String",
+      "description": "Description for bot.account."
+    },
+    {
+      "name": "bot.name.cn",
+      "type": "java.lang.String",
+      "description": "Description for bot.name.cn."
+    },
+    {
+      "name": "file.path.config",
+      "type": "java.lang.String",
+      "description": "Description for file.path.config."
+    },
+    {
+      "name": "file.path.data",
+      "type": "java.lang.String",
+      "description": "Description for file.path.data."
     }
   ]
 }

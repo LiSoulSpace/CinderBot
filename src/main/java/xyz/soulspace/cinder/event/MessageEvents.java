@@ -19,6 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import xyz.soulspace.cinder.command.*;
 import xyz.soulspace.cinder.constant.ConstantBlackList;
+import xyz.soulspace.cinder.service.KeyWordService;
 import xyz.soulspace.cinder.utils.StringUtil;
 
 import java.util.ArrayList;
@@ -29,6 +30,9 @@ public class MessageEvents extends SimpleListenerHost {
 
     @Autowired
     CommandConfig commandConfig;
+
+    @Autowired
+    KeyWordService keyWordService;
 
     @Override
     public void handleException(@NotNull CoroutineContext context, @NotNull Throwable exception) {

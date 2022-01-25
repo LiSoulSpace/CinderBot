@@ -2,6 +2,7 @@ package xyz.soulspace.cinder.utils;
 
 import lombok.experimental.UtilityClass;
 import xyz.soulspace.cinder.constant.ConstantImage;
+import xyz.soulspace.cinder.pojo.ImageInfo;
 
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;

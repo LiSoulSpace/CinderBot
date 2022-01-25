@@ -1,0 +1,44 @@
+13:12:33[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 25924 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+13:12:33[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+13:12:33[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:12:33[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:12:34[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+13:12:34[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+13:12:34[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:12:34[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+13:12:34[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:12:34[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+13:12:35[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 521d12c8-053d-4822-b650-cf77cecccc42
+
+13:12:35[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@473c92a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c2993f7, org.springframework.security.web.header.HeaderWriterFilter@73318caa, org.springframework.security.web.csrf.CsrfFilter@3427a935, org.springframework.security.web.authentication.logout.LogoutFilter@3cfb5f68, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a17bb17, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@46b81273, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@631f311d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60cefdcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@747af5dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77342733, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74289826, org.springframework.security.web.session.SessionManagementFilter@72ae11ef, org.springframework.security.web.access.ExceptionTranslationFilter@71ad32ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14b115b4]
+13:12:35[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:12:35[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+13:12:35[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+13:12:35[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 2.585 seconds (JVM running for 3.442)
+13:13:10[DefaultDispatcher-worker-6] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[4646],[968921309]]测试
+13:13:10[DefaultDispatcher-worker-6] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[4646],[968921309]]测试
+13:13:15[DefaultDispatcher-worker-6] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[4647],[1248479811]]早安
+13:13:15[DefaultDispatcher-worker-6] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[4647],[1248479811]]早安
+13:13:30[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+13:16:47[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 28575 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+13:16:47[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+13:16:47[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:16:47[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:16:48[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+13:16:48[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+13:16:48[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+13:16:48[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+13:16:48[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:16:48[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1158 ms
+13:16:49[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7346ab8d-2b37-4c33-b95d-a5f7a370b16e
+
+13:16:49[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@549d37df, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b41b2d8, org.springframework.security.web.header.HeaderWriterFilter@3cfb5f68, org.springframework.security.web.csrf.CsrfFilter@1970a7ec, org.springframework.security.web.authentication.logout.LogoutFilter@7da42430, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66817cea, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b0c8063, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6f447bcf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3ae66923, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b541103, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b234d88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66e2a875, org.springframework.security.web.session.SessionManagementFilter@9ff358c, org.springframework.security.web.access.ExceptionTranslationFilter@1543893c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59f46ba9]
+13:16:49[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:16:49[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+13:16:49[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+13:16:49[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 2.342 seconds (JVM running for 3.289)
+13:17:03[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...

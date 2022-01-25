@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import xyz.soulspace.cinder.bot.CinderBot;
+import xyz.soulspace.cinder.constant.ConstantCommon;
 import xyz.soulspace.cinder.utils.CollectionUtil;
 import xyz.soulspace.cinder.utils.NumberUtil;
 import xyz.soulspace.cinder.utils.StringUtil;
