@@ -1,0 +1,868 @@
+15:32:16[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 81550 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+15:32:16[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+15:32:16[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:32:16[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:32:17[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+15:32:17[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+15:32:17[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:32:17[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+15:32:17[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:32:17[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1005 ms
+15:32:17[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8ba7f05b-7496-434e-b059-864b946a270e
+
+15:32:17[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16ed305, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ba8d55e, org.springframework.security.web.header.HeaderWriterFilter@75227228, org.springframework.security.web.csrf.CsrfFilter@39412531, org.springframework.security.web.authentication.logout.LogoutFilter@6a2bb6f3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19a15daa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@21315322, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1058e837, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e1ae3f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d668d4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a535d06, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@599484a6, org.springframework.security.web.session.SessionManagementFilter@427461b6, org.springframework.security.web.access.ExceptionTranslationFilter@1a6120a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9ad2405]
+15:32:17[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:32:17[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+15:32:17[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+15:32:17[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.89 seconds (JVM running for 2.637)
+15:53:29[Test worker] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [xyz.soulspace.cinder.CinderApplicationTests], using SpringBootContextLoader
+15:53:29[Test worker] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [xyz.soulspace.cinder.CinderApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:53:29[Test worker] INFO  o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [xyz.soulspace.cinder.CinderApplicationTests]: CinderApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:53:29[Test worker] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration xyz.soulspace.cinder.CinderApplication for test class xyz.soulspace.cinder.CinderApplicationTests
+15:53:29[Test worker] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:53:29[Test worker] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5d8445d7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37d80fe7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@384fc774, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@e3cee7b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@71e9a896, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6b9267b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@408b35bf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@29ad44e3, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@15bcf458, org.springframework.test.context.event.EventPublishingTestExecutionListener@5af9926a, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@43c67247, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@fac80, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@726386ed, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@649f2009, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@14bb2297, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@69adf72c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@797501a]
+15:53:30[Test worker] INFO  xyz.soulspace.cinder.CinderApplicationTests - Starting CinderApplicationTests using Java 16.0.1 on soulspace-Legion-Y7000P-2019 with PID 94815 (started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+15:53:30[Test worker] INFO  xyz.soulspace.cinder.CinderApplicationTests - No active profile set, falling back to default profiles: default
+15:53:31[Test worker] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d9a11787-5147-4e4d-87ac-b73b041e6dfa
+
+15:53:31[Test worker] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@401ec794, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c6ac73c, org.springframework.security.web.header.HeaderWriterFilter@29d2fa84, org.springframework.security.web.csrf.CsrfFilter@347123dc, org.springframework.security.web.authentication.logout.LogoutFilter@32d0d7eb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@632c3f55, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@da22aa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d76099a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@f48a080, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@405d8a80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ac4e690, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47f0f414, org.springframework.security.web.session.SessionManagementFilter@2bc0b8c8, org.springframework.security.web.access.ExceptionTranslationFilter@59d5c537, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b0d3e7]
+15:53:31[Test worker] INFO  xyz.soulspace.cinder.CinderApplicationTests - Started CinderApplicationTests in 2.083 seconds (JVM running for 3.144)
+15:53:34[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+16:43:39[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166177],[549427819]][mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1643100218,"forward":1,"height":0,"token":"c782ddd1236122be3da548ce1bcd561d","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":1223494503},"meta":{"detail_1":{"appid":"1109937557","desc":"衡水二中誓师大会X弹死你","gamePoints":"","gamePointsUrl":"","host":{"nick":"孙雨长","uin":1223494503},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1640166716","preview":"pubminishare-30161.picsz.qpic.cn/8d0ae26b-7721-4d52-aa79-93e98f8b267b","qqdocurl":"https://b23.tv/4MlxGhG?share_medium=android&share_source=qq&bbid=XYA1198ACCF6395AA1277B4B01B118F01AA26&ts=1643100212320","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/3eed6225e07dd0becd518a603b39ef5d"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}]
+16:43:39[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166177],[549427819]][mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1643100218,"forward":1,"height":0,"token":"c782ddd1236122be3da548ce1bcd561d","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":1223494503},"meta":{"detail_1":{"appid":"1109937557","desc":"衡水二中誓师大会X弹死你","gamePoints":"","gamePointsUrl":"","host":{"nick":"孙雨长","uin":1223494503},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1640166716","preview":"pubminishare-30161.picsz.qpic.cn/8d0ae26b-7721-4d52-aa79-93e98f8b267b","qqdocurl":"https://b23.tv/4MlxGhG?share_medium=android&share_source=qq&bbid=XYA1198ACCF6395AA1277B4B01B118F01AA26&ts=1643100212320","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/3eed6225e07dd0becd518a603b39ef5d"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}],groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+16:43:41[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2689547052,userNick:预予余鱼,msg:[mirai:source:[166178],[1287452043]]【荒野大镖客2】𝟒𝐤𝟔𝟎𝐟𝐩𝐬 RTX3090下的极致画质风光体验！
+| Tracyhan
+| https://www.youtube.com/watch?v=6NVBe4BKLkY&list=PLitQgpZxFlAPEg1vUJZqNlqEnJFhWs...
+| 👍 24365 💰 5643 ⭐ 19101[mirai:image:{798A39FA-A2F6-DB96-ADBE-8DC9C9B2F4AB}.jpg]
+直达链接: https://bilibili.com/video/BV1Vq4y1J7xG
+16:43:57[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166179],[1973356540]]？
+16:43:57[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166179],[1973356540]]？,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+16:43:59[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166180],[1003577404]]？
+16:43:59[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166180],[1003577404]]？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+16:43:59[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2689547052,userNick:预予余鱼,msg:[mirai:source:[166181],[258168684]]？
+16:44:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166182],[7530764]]寄
+16:44:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166182],[7530764]]寄,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+16:44:07[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166183],[1430409107]]出问题了
+16:44:07[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166183],[1430409107]]出问题了,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+16:44:17[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166184],[1359995112]]党 卫 军
+16:44:17[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166184],[1359995112]]党 卫 军,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+16:44:20[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:865538395,userNick:晓宇,msg:[mirai:source:[166185],[-1544542490]]哈哈哈哈哈哈
+16:44:20[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:晓宇,userId:865538395,msg:%[mirai:source:[166185],[-1544542490]]哈哈哈哈哈哈,groupName:双辽理工大学,userCard:群主不女装不改名-郑屯伧父
+16:44:23[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166186],[1528257185]]太像了
+16:44:23[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166186],[1528257185]]太像了,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+16:45:01[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166187],[82194823]][mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1643100301,"forward":1,"height":0,"token":"98f3154478dea484ea99dbb46182d4f3","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":1223494503},"meta":{"detail_1":{"appid":"1109937557","desc":"珍贵历史影像，希特勒的演讲有多洗脑，这段画面让人不寒而栗","gamePoints":"","gamePointsUrl":"","host":{"nick":"孙雨长","uin":1223494503},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1640166716","preview":"pubminishare-30161.picsz.qpic.cn/42caf033-ec84-4981-a9cc-e3094714720c","qqdocurl":"https://b23.tv/6hX7PiD?share_medium=android&share_source=qq&bbid=XYA1198ACCF6395AA1277B4B01B118F01AA26&ts=1643100296386","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/0401ab4c4140d8bd44a6316e2e55e48e"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}]
+16:45:01[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166187],[82194823]][mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1643100301,"forward":1,"height":0,"token":"98f3154478dea484ea99dbb46182d4f3","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":1223494503},"meta":{"detail_1":{"appid":"1109937557","desc":"珍贵历史影像，希特勒的演讲有多洗脑，这段画面让人不寒而栗","gamePoints":"","gamePointsUrl":"","host":{"nick":"孙雨长","uin":1223494503},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1640166716","preview":"pubminishare-30161.picsz.qpic.cn/42caf033-ec84-4981-a9cc-e3094714720c","qqdocurl":"https://b23.tv/6hX7PiD?share_medium=android&share_source=qq&bbid=XYA1198ACCF6395AA1277B4B01B118F01AA26&ts=1643100296386","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/0401ab4c4140d8bd44a6316e2e55e48e"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}],groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+16:55:47[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:865538395,userNick:晓宇,msg:[mirai:source:[166188],[1769122003]]Windows是真费电
+16:55:47[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:晓宇,userId:865538395,msg:%[mirai:source:[166188],[1769122003]]Windows是真费电,groupName:双辽理工大学,userCard:群主不女装不改名-郑屯伧父
+16:55:52[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:865538395,userNick:晓宇,msg:[mirai:source:[166189],[-1153896350]]晚上直播
+16:55:52[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:晓宇,userId:865538395,msg:%[mirai:source:[166189],[-1153896350]]晚上直播,groupName:双辽理工大学,userCard:群主不女装不改名-郑屯伧父
+17:00:00[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2689547052,userNick:预予余鱼,msg:[mirai:source:[166190],[333609883]]酉时已到
+17:30:02[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166191],[2089104342]]把那个错误的功能换了
+17:30:02[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166191],[2089104342]]把那个错误的功能换了,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+17:31:27[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166192],[936271477]]晚上配置一个nonebot吧，重写太费劲了，而且即使重写成功也很难加载模块，甚至加载我也得自己写
+17:31:27[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166192],[936271477]]晚上配置一个nonebot吧，重写太费劲了，而且即使重写成功也很难加载模块，甚至加载我也得自己写,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+17:31:40[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166193],[1926115226]]折磨
+17:31:40[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166193],[1926115226]]折磨,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+17:41:01[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:41:08[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 160731 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+17:41:08[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:41:08[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:41:08[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:41:09[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:41:09[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:41:09[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:41:09[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:41:09[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:41:09[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 887 ms
+17:41:10[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a690b1cf-9849-4427-becd-66c0ad3bfb81
+
+17:41:10[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30fa5253, org.springframework.security.web.context.SecurityContextPersistenceFilter@e99a199, org.springframework.security.web.header.HeaderWriterFilter@636afe98, org.springframework.security.web.csrf.CsrfFilter@1964ea3, org.springframework.security.web.authentication.logout.LogoutFilter@3e010b55, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7bb1d70b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ad615fc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@64d09942, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@457bd6a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ce41c2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e464b10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f85d5ef, org.springframework.security.web.session.SessionManagementFilter@50ccf23e, org.springframework.security.web.access.ExceptionTranslationFilter@49c0ddb9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1922d384]
+17:41:10[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:41:10[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:41:10[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:41:10[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.695 seconds (JVM running for 2.338)
+17:41:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39089],[2067283320]]#zhihu
+17:41:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:41:33[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:41:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39089],[2067283320]]#zhihu
+17:44:59[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:45:02[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 163538 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+17:45:02[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:45:02[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:45:02[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:45:03[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:45:03[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:45:03[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:45:03[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:45:03[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:45:03[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 823 ms
+17:45:03[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b5a2516b-282a-4303-af0e-6123076b02b2
+
+17:45:03[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@512fe397, org.springframework.security.web.context.SecurityContextPersistenceFilter@3cda5a6f, org.springframework.security.web.header.HeaderWriterFilter@488aecf4, org.springframework.security.web.csrf.CsrfFilter@7206b965, org.springframework.security.web.authentication.logout.LogoutFilter@13540b5a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f160d10, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@23f6a7ff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69ec96c3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7e1cbb00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d2f91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64bc055d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72b3e445, org.springframework.security.web.session.SessionManagementFilter@12352269, org.springframework.security.web.access.ExceptionTranslationFilter@bc9d63a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@172a100c]
+17:45:03[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:45:03[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:45:03[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:45:03[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.71 seconds (JVM running for 2.611)
+17:45:12[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39105],[1838213302]]#zhihu
+17:45:12[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:45:12[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:45:12[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:45:12[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39105],[1838213302]]#zhihu
+17:46:20[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39108],[1142622584]]#
+17:46:20[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39108],[1142622584]]#
+17:46:50[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166194],[977377706]]#zhihu
+17:46:50[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:46:50[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:46:50[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:46:50[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166194],[977377706]]#zhihu,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+17:46:56[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166195],[813789715]]寄
+17:46:56[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166195],[813789715]]寄,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+17:47:09[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166196],[308503555]]#baidu
+17:47:09[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166196],[308503555]]#baidu,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+17:47:12[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166197],[1003792623]]🐔
+17:47:12[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166197],[1003792623]]🐔,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+17:47:40[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39128],[712958325]]#zhihu 1
+17:47:40[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:47:40[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:47:40[DefaultDispatcher-worker-4] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:47:40[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39128],[712958325]]#zhihu 1
+17:49:34[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39137],[2060422694]]#zhihu
+17:49:34[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:49:34[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:49:34[DefaultDispatcher-worker-4] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:49:34[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39137],[2060422694]]#zhihu
+17:50:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39140],[1417326353]]#zhihu
+17:50:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:50:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:50:04[DefaultDispatcher-worker-2] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:50:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39140],[1417326353]]#zhihu
+17:52:22[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:52:26[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 168349 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+17:52:26[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:52:26[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:52:26[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:52:27[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:52:27[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:52:27[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:52:27[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:52:27[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:52:27[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 860 ms
+17:52:27[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 666c2170-31b5-45fc-8822-fa2038488182
+
+17:52:27[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f327af, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ced881e, org.springframework.security.web.header.HeaderWriterFilter@31a3901f, org.springframework.security.web.csrf.CsrfFilter@57ecbecb, org.springframework.security.web.authentication.logout.LogoutFilter@6c925306, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29430341, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77184ee2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2cf49108, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@78542dd8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@117e7d97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e981398, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@751743a3, org.springframework.security.web.session.SessionManagementFilter@41a1e6ca, org.springframework.security.web.access.ExceptionTranslationFilter@299c8163, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71439ab7]
+17:52:27[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:52:27[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:52:27[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:52:27[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.721 seconds (JVM running for 2.284)
+17:52:44[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39153],[1430101484]]#zhihu
+17:52:44[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:52:44[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:52:44[DefaultDispatcher-worker-1] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:52:44[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39153],[1430101484]]#zhihu
+17:53:38[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:53:41[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 169384 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+17:53:41[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:53:41[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:53:41[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:53:42[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:53:42[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:53:42[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:53:42[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:53:42[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:53:42[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+17:53:42[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 74fca9e5-397e-4dcb-98c2-c2070f118e50
+
+17:53:42[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@82d4429, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f43bd3e, org.springframework.security.web.header.HeaderWriterFilter@548d204d, org.springframework.security.web.csrf.CsrfFilter@3eb18248, org.springframework.security.web.authentication.logout.LogoutFilter@7b66c33f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7335646e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d34d56f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@21e43756, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@43e7a9b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1013b21e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39b8e42f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb098de, org.springframework.security.web.session.SessionManagementFilter@6f91db35, org.springframework.security.web.access.ExceptionTranslationFilter@7f3c7da7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@194d34fe]
+17:53:42[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:53:42[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:53:42[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:53:42[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.695 seconds (JVM running for 2.306)
+17:53:49[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39156],[1905082278]]#zhihu
+17:53:49[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+17:53:49[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:53:49[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:53:49[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/null/python-files/ZhiHuHotSearch.png
+17:53:49[DefaultDispatcher-worker-4] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:53:49[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39156],[1905082278]]#zhihu
+17:54:06[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+17:58:19[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 172507 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+17:58:19[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+17:58:19[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:58:19[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:58:20[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+17:58:20[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+17:58:20[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:58:20[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+17:58:20[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:58:20[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
+17:58:21[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 18730c37-f03c-463f-a0d9-698599715b76
+
+17:58:21[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34810f61, org.springframework.security.web.context.SecurityContextPersistenceFilter@1eb47d09, org.springframework.security.web.header.HeaderWriterFilter@713a877f, org.springframework.security.web.csrf.CsrfFilter@224fa29a, org.springframework.security.web.authentication.logout.LogoutFilter@78fa6bf0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b44e8a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67533235, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6fac1747, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5631cac8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d5da847, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56d54acb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3793f7f0, org.springframework.security.web.session.SessionManagementFilter@39b8e42f, org.springframework.security.web.access.ExceptionTranslationFilter@76a31687, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7335646e]
+17:58:21[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:58:21[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+17:58:21[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+17:58:21[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.648 seconds (JVM running for 2.213)
+17:58:25[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39166],[1154180885]]#zhihu
+17:58:25[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+17:58:25[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+17:58:25[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+17:58:25[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/null/python-files/ZhiHuHotSearch.png
+17:58:25[DefaultDispatcher-worker-4] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+17:58:25[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39166],[1154180885]]#zhihu
+18:06:23[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+18:06:26[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 177957 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+18:06:26[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+18:06:26[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:06:26[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:06:27[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+18:06:27[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+18:06:27[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:06:27[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+18:06:27[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:06:27[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 873 ms
+18:06:27[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: aafc5a51-0ea3-40ef-8046-4701156a56d6
+
+18:06:27[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c71d73b, org.springframework.security.web.context.SecurityContextPersistenceFilter@20287b02, org.springframework.security.web.header.HeaderWriterFilter@17e818d1, org.springframework.security.web.csrf.CsrfFilter@5345de07, org.springframework.security.web.authentication.logout.LogoutFilter@5f28d977, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b73f729, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5f43ecfb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@424a2ab5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5bfcbb6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@736245bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a97c4fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c53d642, org.springframework.security.web.session.SessionManagementFilter@d4f896a, org.springframework.security.web.access.ExceptionTranslationFilter@33b18f80, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e628d82]
+18:06:27[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+18:06:27[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+18:06:27[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+18:06:27[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.695 seconds (JVM running for 2.299)
+18:06:36[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39187],[1647557331]]#zhihu
+18:06:36[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+18:06:36[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+18:06:36[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+18:06:36[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/null/python-files/ZhiHuHotSearch.png
+18:06:36[DefaultDispatcher-worker-3] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+18:06:36[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39187],[1647557331]]#zhihu
+18:07:01[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+18:07:04[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 178623 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+18:07:04[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+18:07:04[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:07:04[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:07:05[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+18:07:05[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+18:07:05[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:07:05[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+18:07:05[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:07:05[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 815 ms
+18:07:05[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 70eebc6f-7425-4386-9c2e-9b19112e2aff
+
+18:07:05[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21e43756, org.springframework.security.web.context.SecurityContextPersistenceFilter@713a877f, org.springframework.security.web.header.HeaderWriterFilter@76a31687, org.springframework.security.web.csrf.CsrfFilter@5e556af6, org.springframework.security.web.authentication.logout.LogoutFilter@111b7806, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e1f687f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2d2b5f1e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5fb098de, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c1c921, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39b8e42f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b10146b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5631cac8, org.springframework.security.web.session.SessionManagementFilter@22f17e65, org.springframework.security.web.access.ExceptionTranslationFilter@594f686b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e9f7bac]
+18:07:05[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+18:07:05[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+18:07:05[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+18:07:05[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.626 seconds (JVM running for 2.254)
+18:07:11[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39189],[1155939516]]#zhihu
+18:07:11[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+18:07:11[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+18:07:11[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+18:07:11[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - null/python-files/ZhiHuHotSearch.png
+18:07:11[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+18:07:11[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[39189],[1155939516]]#zhihu
+18:15:00[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+18:41:10[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 199396 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+18:41:10[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+18:41:10[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:41:10[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:41:11[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+18:41:11[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+18:41:11[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:41:11[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+18:41:11[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:41:11[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 846 ms
+18:41:12[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a41c46a9-e593-4552-ba24-2d113dfaaf67
+
+18:41:12[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22cfbd43, org.springframework.security.web.context.SecurityContextPersistenceFilter@721f3b88, org.springframework.security.web.header.HeaderWriterFilter@b52fb5, org.springframework.security.web.csrf.CsrfFilter@7732b1cc, org.springframework.security.web.authentication.logout.LogoutFilter@2b4eb4a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57f25faa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2ab7593e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57ce5db1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@509c373b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75156227, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d3dab97, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@665a9d9c, org.springframework.security.web.session.SessionManagementFilter@b24ad1f, org.springframework.security.web.access.ExceptionTranslationFilter@24bfea08, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69cd6991]
+18:41:12[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+18:41:12[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+18:41:12[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+18:41:12[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.651 seconds (JVM running for 2.238)
+18:41:26[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:38:10[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 233358 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:38:10[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:38:10[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:38:10[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:38:11[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:38:11[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:38:11[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:38:11[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:38:12[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:38:12[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1585 ms
+19:38:12[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4aea3960-9490-4c6e-a5cb-984097034767
+
+19:38:12[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2886d18c, org.springframework.security.web.context.SecurityContextPersistenceFilter@179fb164, org.springframework.security.web.header.HeaderWriterFilter@3125ed4a, org.springframework.security.web.csrf.CsrfFilter@50e965ed, org.springframework.security.web.authentication.logout.LogoutFilter@22027bc0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@60cb05db, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1bac79d0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@72aa48aa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3059d923, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@385b4678, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43fb98cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cc4071d, org.springframework.security.web.session.SessionManagementFilter@6d8efe9d, org.springframework.security.web.access.ExceptionTranslationFilter@421afc5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@10941d55]
+19:38:12[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:38:12[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:38:12[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:38:12[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 2.853 seconds (JVM running for 3.406)
+19:43:08[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36769],[449669251]]#zhihu
+19:43:08[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:43:08[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 null/python-files/ZhiHuHotSearch.py
+19:43:08[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:43:08[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:43:08[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - null/python-files/ZhiHuHotSearch.png
+19:43:08[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:43:08[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36769],[449669251]]#zhihu
+19:45:02[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:45:06[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 238504 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:45:06[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:45:06[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:45:06[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:45:06[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:45:06[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:45:06[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:45:06[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:45:07[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:45:07[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 838 ms
+19:45:07[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cde8b4f1-70d0-4d55-8336-6373ef6e9828
+
+19:45:07[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f52346d, org.springframework.security.web.context.SecurityContextPersistenceFilter@79ffd631, org.springframework.security.web.header.HeaderWriterFilter@29386df5, org.springframework.security.web.csrf.CsrfFilter@42c12a22, org.springframework.security.web.authentication.logout.LogoutFilter@580070dc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e735aa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4e2308cd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4836d40d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17e427cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3875e73e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39850fd7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e5a78bf, org.springframework.security.web.session.SessionManagementFilter@31c6c3f6, org.springframework.security.web.access.ExceptionTranslationFilter@38b85e88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f7dd668]
+19:45:07[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:45:07[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:45:07[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:45:07[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.677 seconds (JVM running for 2.527)
+19:45:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36781],[1094805600]]#zhihu
+19:45:15[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:45:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:45:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 null/python-files/ZhiHuHotSearch.py
+19:45:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:45:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:45:15[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - null/python-files/ZhiHuHotSearch.png
+19:45:15[DefaultDispatcher-worker-4] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:45:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36781],[1094805600]]#zhihu
+19:45:34[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:45:37[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 239115 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:45:37[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:45:37[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:45:37[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:45:38[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:45:38[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:45:38[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:45:38[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:45:38[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:45:38[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 880 ms
+19:45:38[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 43d5e353-2bc1-4ae1-999c-2e153c6d8755
+
+19:45:39[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8f8bfdf, org.springframework.security.web.context.SecurityContextPersistenceFilter@6573adc8, org.springframework.security.web.header.HeaderWriterFilter@591ee226, org.springframework.security.web.csrf.CsrfFilter@42aec248, org.springframework.security.web.authentication.logout.LogoutFilter@7a631369, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@484efc18, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b1064f0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@17195d5d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21cc7d32, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d92395c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75526de1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55fe9761, org.springframework.security.web.session.SessionManagementFilter@9e5e31c, org.springframework.security.web.access.ExceptionTranslationFilter@554c7c32, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a41747a]
+19:45:39[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:45:39[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:45:39[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:45:39[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.728 seconds (JVM running for 2.549)
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36783],[149576928]]#zhihu
+19:45:47[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - null/python-files/ZhiHuHotSearch.py
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 null/python-files/ZhiHuHotSearch.py
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:45:47[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - null/python-files/ZhiHuHotSearch.png
+19:45:47[DefaultDispatcher-worker-3] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:45:47[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36783],[149576928]]#zhihu
+19:46:17[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:47:01[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 240449 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:47:01[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:47:01[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:47:01[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:47:03[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:47:03[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:47:03[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:47:03[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:47:03[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:47:03[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1811 ms
+19:47:04[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 55c53571-12d4-4432-9019-61c3fe72e7ff
+
+19:47:04[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3be65c7a, org.springframework.security.web.context.SecurityContextPersistenceFilter@48b9bb7d, org.springframework.security.web.header.HeaderWriterFilter@58a34f56, org.springframework.security.web.csrf.CsrfFilter@6134a92a, org.springframework.security.web.authentication.logout.LogoutFilter@5afaadad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4bea219, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1188041c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b502450, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c51f092, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a2e844e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14765f17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8c698c8, org.springframework.security.web.session.SessionManagementFilter@6f201f12, org.springframework.security.web.access.ExceptionTranslationFilter@28870b4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@130476ba]
+19:47:04[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:47:04[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:47:04[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:47:04[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 3.408 seconds (JVM running for 4.131)
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36786],[2061349478]]#zhihu
+19:47:08[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - null/python-files/ZhiHuHotSearch.py
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 null/python-files/ZhiHuHotSearch.py
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:47:08[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - null/python-files/ZhiHuHotSearch.png
+19:47:08[DefaultDispatcher-worker-1] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:47:08[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36786],[2061349478]]#zhihu
+19:47:21[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:47:24[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 240998 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:47:24[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:47:24[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:47:24[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:47:24[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:47:24[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:47:24[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:47:24[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:47:24[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:47:24[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 804 ms
+19:47:25[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 658c1071-22a8-49b6-94c4-ea7fb59275ad
+
+19:47:25[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e2675ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@299c8163, org.springframework.security.web.header.HeaderWriterFilter@4aaea15, org.springframework.security.web.csrf.CsrfFilter@5cd5a9c1, org.springframework.security.web.authentication.logout.LogoutFilter@558a9fc2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@25460bb0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@117e7d97, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ef2df9d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@54a92b8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f2c244b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c79916a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@539a6884, org.springframework.security.web.session.SessionManagementFilter@74f739, org.springframework.security.web.access.ExceptionTranslationFilter@3e96038c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fdaa9ad]
+19:47:25[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:47:25[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:47:25[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:47:25[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.651 seconds (JVM running for 2.223)
+19:47:31[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36788],[1789000207]]#zhihu
+19:47:31[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:47:31[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:47:31[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:47:31[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:47:33[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:47:33[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:47:33[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - data/python-files/ZhiHuHotSearch.png
+19:47:35[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:47:35[DefaultDispatcher-worker-1] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:47:35[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36788],[1789000207]]#zhihu
+19:48:35[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:48:39[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 242113 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:48:39[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:48:39[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:48:39[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:48:41[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:48:41[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:48:41[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:48:41[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:48:41[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:48:41[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+19:48:41[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 416e5199-6a63-4c29-a1e7-fdd28e3cefb3
+
+19:48:41[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b574dd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bb06153, org.springframework.security.web.header.HeaderWriterFilter@5a652a25, org.springframework.security.web.csrf.CsrfFilter@5343d39d, org.springframework.security.web.authentication.logout.LogoutFilter@297885d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5e846498, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7aa91b06, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3ddaa63, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@179d1280, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5345de07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@133fa9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c2bb18a, org.springframework.security.web.session.SessionManagementFilter@43f43218, org.springframework.security.web.access.ExceptionTranslationFilter@630c20ac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@741cf7ec]
+19:48:42[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:48:42[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:48:42[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:48:42[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 2.534 seconds (JVM running for 3.153)
+19:48:53[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36796],[759925991]]#zhihu
+19:48:53[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:48:53[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:48:53[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:48:53[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:48:54[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:48:54[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:48:54[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/data/python-files/ZhiHuHotSearch.png
+19:48:55[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:48:55[DefaultDispatcher-worker-4] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:48:55[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36796],[759925991]]#zhihu
+19:50:17[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:50:20[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 243464 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:50:20[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:50:20[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:50:20[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:50:21[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:50:21[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:50:21[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:50:21[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:50:21[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:50:21[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+19:50:22[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 39fab123-7072-4a10-9af7-ce4574eaddd2
+
+19:50:22[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@640090c3, org.springframework.security.web.context.SecurityContextPersistenceFilter@591ee226, org.springframework.security.web.header.HeaderWriterFilter@554c7c32, org.springframework.security.web.csrf.CsrfFilter@12e8d9a9, org.springframework.security.web.authentication.logout.LogoutFilter@20f0eed2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22391e25, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@746e6460, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f160d10, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@571b29e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@9e5e31c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bd27946, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21cc7d32, org.springframework.security.web.session.SessionManagementFilter@40df211b, org.springframework.security.web.access.ExceptionTranslationFilter@6521dc88, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@660aa87d]
+19:50:22[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:50:22[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:50:22[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:50:22[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.659 seconds (JVM running for 2.232)
+19:50:32[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36806],[2044419367]]#zhihu
+19:50:32[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:50:32[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:50:32[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:50:32[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:50:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:50:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:50:33[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/data/python-files/ZhiHuHotSearch.png
+19:50:36[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain build
+19:50:36[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:50:36[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:50:36[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36806],[2044419367]]#zhihu
+19:52:34[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:52:37[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 245147 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:52:37[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:52:37[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:52:37[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:52:38[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:52:38[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:52:38[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:52:38[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:52:38[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:52:38[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 910 ms
+19:52:38[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0aa0f90f-8eff-477e-9b12-2865f4ed4c25
+
+19:52:38[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@619b12e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e92eb3, org.springframework.security.web.header.HeaderWriterFilter@f3605, org.springframework.security.web.csrf.CsrfFilter@57524bd2, org.springframework.security.web.authentication.logout.LogoutFilter@68f35a28, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57ce5db1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@75afb24f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@41f3dd6c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@21f89b36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20237646, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@650d693f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2437cf4f, org.springframework.security.web.session.SessionManagementFilter@3b1969b6, org.springframework.security.web.access.ExceptionTranslationFilter@36e20de6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8c7695d]
+19:52:38[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:52:38[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:52:38[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:52:39[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.809 seconds (JVM running for 2.37)
+19:52:45[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36812],[333074605]]#zhihu
+19:52:45[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:52:45[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:52:45[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:52:45[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:52:46[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:52:46[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:52:46[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/data/python-files/ZhiHuHotSearch.png
+19:52:49[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain build
+19:52:49[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:52:49[DefaultDispatcher-worker-5] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:52:49[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36812],[333074605]]#zhihu
+19:53:07[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:53:11[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 245848 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:53:11[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:53:11[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:53:11[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:53:11[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:53:11[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:53:11[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:53:11[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:53:11[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:53:11[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 826 ms
+19:53:12[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7d1f17b6-35d5-4bcc-84d1-1eb2d7957360
+
+19:53:12[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d747337, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d36d46c, org.springframework.security.web.header.HeaderWriterFilter@513ec0c7, org.springframework.security.web.csrf.CsrfFilter@16619e47, org.springframework.security.web.authentication.logout.LogoutFilter@5dde3a91, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b4c3d20, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@17e818d1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7750eb86, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@50a79d18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61b27930, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53f13f2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b73f729, org.springframework.security.web.session.SessionManagementFilter@c7d8417, org.springframework.security.web.access.ExceptionTranslationFilter@133fa9f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ab5935]
+19:53:12[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:53:12[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:53:12[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:53:12[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.664 seconds (JVM running for 2.235)
+19:53:17[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36813],[1967655293]]#zhihu
+19:53:17[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:53:17[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:53:17[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:53:17[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:53:18[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:53:18[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:53:18[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/data/python-files/ZhiHuHotSearch.png
+19:53:18[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain build
+19:53:18[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:53:18[DefaultDispatcher-worker-3] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:53:18[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36813],[1967655293]]#zhihu
+19:54:05[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:54:07[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 246759 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:54:07[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:54:07[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:54:07[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:54:08[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:54:08[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:54:08[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:54:08[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:54:08[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:54:08[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 882 ms
+19:54:09[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4883406e-4aad-41ae-896f-2c76f1da1a89
+
+19:54:09[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f4e2e0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a352672, org.springframework.security.web.header.HeaderWriterFilter@a2e02bf, org.springframework.security.web.csrf.CsrfFilter@6dcbe8cf, org.springframework.security.web.authentication.logout.LogoutFilter@52fd4325, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@77d7800, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5fa7471f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e2675ac, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7fe9e1b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8c6d755, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f2c244b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ef2df9d, org.springframework.security.web.session.SessionManagementFilter@537e50bd, org.springframework.security.web.access.ExceptionTranslationFilter@7ad9eff8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ef3b8fc]
+19:54:09[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:54:09[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:54:09[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:54:09[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.711 seconds (JVM running for 2.255)
+19:54:16[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36817],[20658515]]#zhihu
+19:54:16[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:54:16[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:54:16[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:54:16[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:54:17[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:54:17[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:54:17[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/data/python-files/ZhiHuHotSearch.png
+19:54:20[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain build
+19:54:20[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:54:20[DefaultDispatcher-worker-3] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:54:20[DefaultDispatcher-worker-3] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:54:20[DefaultDispatcher-worker-3] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36817],[20658515]]#zhihu
+19:59:14[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+19:59:17[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 250323 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+19:59:17[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+19:59:17[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+19:59:17[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+19:59:18[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+19:59:18[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+19:59:18[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:59:18[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+19:59:18[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:59:18[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 818 ms
+19:59:18[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 815fcc89-7716-4ab9-b7b7-2f288ad53bde
+
+19:59:18[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c4862eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7904735, org.springframework.security.web.header.HeaderWriterFilter@44a52a94, org.springframework.security.web.csrf.CsrfFilter@501f72dc, org.springframework.security.web.authentication.logout.LogoutFilter@46a6e9e1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@522f57c4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@438a834a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@531486c4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16ad99b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f7303b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@447f6cd6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@298ecd30, org.springframework.security.web.session.SessionManagementFilter@3a528add, org.springframework.security.web.access.ExceptionTranslationFilter@7f85b54d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5002d88]
+19:59:18[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:59:18[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+19:59:18[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+19:59:18[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.654 seconds (JVM running for 2.493)
+19:59:32[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36856],[1287478287]]#zhihu
+19:59:32[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new zhihu Command start
+19:59:32[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+19:59:32[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+19:59:32[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+19:59:34[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+19:59:34[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+19:59:34[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/data/python-files/ZhiHuHotSearch.png
+19:59:37[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain build
+19:59:37[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - 
+19:59:37[DefaultDispatcher-worker-1] ERROR xyz.soulspace.cinder.event.MessageEvents - RecallEvent Error:Exception in EventHandler
+19:59:37[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36856],[1287478287]]#zhihu
+20:08:47[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+20:08:50[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 256720 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+20:08:50[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+20:08:50[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:08:50[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:08:51[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+20:08:51[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+20:08:51[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:08:51[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+20:08:51[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:08:51[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 822 ms
+20:08:51[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4e89ffd7-7e1e-43d4-aab9-179b8e1ea002
+
+20:08:51[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b36f67b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a8c217a, org.springframework.security.web.header.HeaderWriterFilter@16d8cadf, org.springframework.security.web.csrf.CsrfFilter@28808a42, org.springframework.security.web.authentication.logout.LogoutFilter@425eaaeb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2261c5be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7f7a83ec, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c4862eb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2832ea2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61597927, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f7303b3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@531486c4, org.springframework.security.web.session.SessionManagementFilter@62e099f1, org.springframework.security.web.access.ExceptionTranslationFilter@6163b832, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b9fa578]
+20:08:51[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:08:51[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+20:08:51[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+20:08:51[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.654 seconds (JVM running for 2.179)
+20:09:59[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36886],[1206879507]]#zhihu
+20:09:59[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:09:59[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:09:59[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:09:59[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:10:00[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:10:00[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:10:03[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:source:[36886],[1206879507]]#zhihu[mirai:image:{82AEF7EC-9B8F-8B9E-9813-35138F82759E}.png]
+
+20:10:05[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36886],[1206879507]]#zhihu
+20:12:06[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+20:12:09[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 259086 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+20:12:09[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+20:12:09[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:12:09[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:12:10[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+20:12:10[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+20:12:10[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:12:10[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+20:12:10[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:12:10[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 837 ms
+20:12:10[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 52866ebc-0a8d-41ae-a56c-132ac178e696
+
+20:12:10[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f2e9b1a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c4b6585, org.springframework.security.web.header.HeaderWriterFilter@4c1a7b76, org.springframework.security.web.csrf.CsrfFilter@4771c9ef, org.springframework.security.web.authentication.logout.LogoutFilter@3cb60ee0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5685a1d0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@49c0ddb9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1922d384, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ea67d4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34cf359f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c882b6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54a399ea, org.springframework.security.web.session.SessionManagementFilter@70c5cca7, org.springframework.security.web.access.ExceptionTranslationFilter@6225ec93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@38572d68]
+20:12:10[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:12:10[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+20:12:10[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+20:12:10[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.663 seconds (JVM running for 2.19)
+20:12:19[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36909],[1166506977]]#zhihu
+20:12:19[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:12:19[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:12:19[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:12:19[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:12:20[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:12:20[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:12:23[DefaultDispatcher-worker-1] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:image:{7C7CC2FA-BB79-40E5-8A0D-98F84E130E72}.png]
+
+20:12:24[DefaultDispatcher-worker-1] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36909],[1166506977]]#zhihu
+20:13:12[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+20:13:15[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 260062 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+20:13:15[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+20:13:15[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:13:15[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:13:16[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+20:13:16[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+20:13:16[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:13:16[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+20:13:16[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:13:16[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+20:13:16[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 113fbfc2-ab49-4e36-8bf9-bb9b28bbd215
+
+20:13:17[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74b99c34, org.springframework.security.web.context.SecurityContextPersistenceFilter@3217af39, org.springframework.security.web.header.HeaderWriterFilter@4c6f3a3b, org.springframework.security.web.csrf.CsrfFilter@40390d9d, org.springframework.security.web.authentication.logout.LogoutFilter@713a877f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5cba9e40, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@690bc1de, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5df43790, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5566df24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3eb18248, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e556af6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e084cf5, org.springframework.security.web.session.SessionManagementFilter@43d7006f, org.springframework.security.web.access.ExceptionTranslationFilter@361fa27e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fa33232]
+20:13:17[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:13:17[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+20:13:17[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+20:13:17[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.643 seconds (JVM running for 2.186)
+20:13:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36917],[333329648]]#zhihu
+20:13:21[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:13:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:13:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:13:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:13:22[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:13:22[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:13:25[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:image:{F038B416-822D-8654-C7C6-5D0ACD2B5557}.png]
+20:13:25[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[36917],[333329648]]#zhihu
+20:13:35[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166198],[444711528]]#zhihu
+20:13:35[DefaultDispatcher-worker-17] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:13:35[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:13:35[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:13:35[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:13:36[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:13:36[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:13:37[DefaultDispatcher-worker-17] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:image:{F038B416-822D-8654-C7C6-5D0ACD2B5557}.png]
+20:13:40[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166198],[444711528]]#zhihu,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:14:02[DefaultDispatcher-worker-17] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166199],[986142162]]？
+20:14:02[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166199],[986142162]]？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:14:04[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166200],[1158964645]]寄
+20:14:04[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166200],[1158964645]]寄,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:14:05[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166201],[-2003834094]]寄
+20:14:05[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166201],[-2003834094]]寄,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+20:14:13[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166202],[238486300]]消息发哪去了？
+20:14:13[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166202],[238486300]]消息发哪去了？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:14:29[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166203],[-945266382]]完了复读也噶了
+20:14:29[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166203],[-945266382]]完了复读也噶了,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+20:14:41[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2689547052,userNick:预予余鱼,msg:[mirai:source:[166204],[1782143150]]复读没写呢
+20:14:58[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2689547052,userNick:预予余鱼,msg:[mirai:source:[166205],[207037383]]诶我真是觉得离谱
+20:15:02[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2689547052,userNick:预予余鱼,msg:[mirai:source:[166206],[733434367]]消息呢？
+20:15:48[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166207],[1871481631]]群主夺舍寒假
+20:15:48[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166207],[1871481631]]群主夺舍寒假,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+20:16:03[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166208],[885938603]]#zhihu
+20:16:03[DefaultDispatcher-worker-2] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:16:03[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:16:03[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:16:03[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:16:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:16:04[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:16:08[DefaultDispatcher-worker-2] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:image:{7266F66A-CED1-D6BE-0573-323D336B2A54}.png]
+20:16:11[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166208],[885938603]]#zhihu,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:16:17[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166209],[923474366]]？
+20:16:17[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166209],[923474366]]？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:16:32[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166210],[518573547]]这就被风控了？
+20:16:32[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166210],[518573547]]这就被风控了？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:16:36[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+20:17:13[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Starting CinderApplication using Java 11.0.13 on soulspace-Legion-Y7000P-2019 with PID 263041 (/home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot/build/classes/java/main started by soulspace in /home/soulspace/Documents/GitHub/LiSoulSpace/CinderBot)
+20:17:13[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - No active profile set, falling back to default profiles: default
+20:17:13[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:17:13[restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:17:14[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+20:17:14[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+20:17:14[restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:17:14[restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+20:17:14[restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:17:14[restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 831 ms
+20:17:14[restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8e38cf78-5f60-4850-a3a2-ef5f6546d6d3
+
+20:17:14[restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@522f57c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@13b1b93a, org.springframework.security.web.header.HeaderWriterFilter@72bae37f, org.springframework.security.web.csrf.CsrfFilter@76cd42b4, org.springframework.security.web.authentication.logout.LogoutFilter@5c91610e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f9f4861, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3a528add, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4aa0a364, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2689c08a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fe46b93, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6163b832, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2245b72a, org.springframework.security.web.session.SessionManagementFilter@358ae0d2, org.springframework.security.web.access.ExceptionTranslationFilter@6523e44f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76c8ac0c]
+20:17:14[restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:17:14[restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+20:17:14[restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+20:17:14[restartedMain] INFO  xyz.soulspace.cinder.CinderApplication - Started CinderApplication in 1.668 seconds (JVM running for 2.202)
+20:17:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[35408],[1983236384]]#zhihu
+20:17:21[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:17:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:17:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:17:21[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:17:22[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:17:22[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:17:23[DefaultDispatcher-worker-5] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:image:{7266F66A-CED1-D6BE-0573-323D336B2A54}.png]
+20:17:24[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到好友消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[35408],[1983236384]]#zhihu
+20:17:25[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166211],[519149143]]嗯？
+20:17:25[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166211],[519149143]]嗯？,groupName:双辽理工大学,userCard:QQ群管家
+20:17:27[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166212],[94522441]]老李
+20:17:27[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166212],[94522441]]老李,groupName:双辽理工大学,userCard:QQ群管家
+20:17:31[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166213],[1668779501]]给你看个东西
+20:17:31[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166213],[1668779501]]给你看个东西,groupName:双辽理工大学,userCard:QQ群管家
+20:17:31[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166214],[1430601823]]#zhihu
+20:17:31[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - new ZhiHu Command start
+20:17:31[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - dataPath : data
+20:17:31[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - data/python-files/ZhiHuHotSearch.py
+20:17:31[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - Run python Command : python3 data/python-files/ZhiHuHotSearch.py
+20:17:33[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.utils.RunPythonUtil - null
+20:17:33[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.service.HotPointNewsService - Get ZhiHu Hot Point!
+20:17:36[DefaultDispatcher-worker-4] INFO  x.s.cinder.command.everywhere.ZhiHuNewsCommand - messageChain : [mirai:image:{9FB09592-034B-2C7E-A2AC-8AECC6FB0405}.png]
+20:17:36[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166214],[1430601823]]#zhihu,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:17:40[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166216],[467626227]]诶？
+20:17:40[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166216],[467626227]]诶？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:17:42[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166217],[1270491423]][mirai:image:{E207CEDA-97FB-84E0-B247-3786ACB36012}.jpg]
+20:17:42[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166217],[1270491423]][mirai:image:{E207CEDA-97FB-84E0-B247-3786ACB36012}.jpg],groupName:双辽理工大学,userCard:QQ群管家
+20:17:43[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166218],[894187178]]这就出来了
+20:17:43[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166218],[894187178]]这就出来了,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:17:54[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166219],[1353304011]]诶卧槽
+20:17:54[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166219],[1353304011]]诶卧槽,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:18:02[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166220],[1356960273]]换服务器了？
+20:18:02[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166220],[1356960273]]换服务器了？,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:18:17[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166221],[1676911207]]啊，应该不是
+20:18:17[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166221],[1676911207]]啊，应该不是,groupName:双辽理工大学,userCard:QQ群管家
+20:18:30[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166223],[977680136]][mirai:image:{D6475B88-3916-559A-22AF-0CE1DA8EDCF7}.png]
+20:18:30[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166223],[977680136]][mirai:image:{D6475B88-3916-559A-22AF-0CE1DA8EDCF7}.png],groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:18:30[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166222],[1277450223]]不过现在确实是两台服务器一起跑
+20:18:30[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166222],[1277450223]]不过现在确实是两台服务器一起跑,groupName:双辽理工大学,userCard:QQ群管家
+20:18:58[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166224],[-446415470]]架构转完了，等我把功能转回来就去配置nonebot和别的
+20:18:58[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166224],[-446415470]]架构转完了，等我把功能转回来就去配置nonebot和别的,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:19:17[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166225],[1891471090]]我那边现在zerobot和新版ariadne都在跑
+20:19:17[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166225],[1891471090]]我那边现在zerobot和新版ariadne都在跑,groupName:双辽理工大学,userCard:QQ群管家
+20:19:29[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166226],[1846219886]]python更新到3.9了
+20:19:29[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166226],[1846219886]]python更新到3.9了,groupName:双辽理工大学,userCard:QQ群管家
+20:19:49[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166227],[69085080]]你这又都是啥
+20:19:49[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166227],[69085080]]你这又都是啥,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:19:53[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166228],[2038535807]]高级高级
+20:19:53[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166228],[2038535807]]高级高级,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:20:13[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166229],[1621155780]]ariadne是新版的graia，取代了那个application
+20:20:13[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166229],[1621155780]]ariadne是新版的graia，取代了那个application,groupName:双辽理工大学,userCard:QQ群管家
+20:20:22[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166230],[445970246]]zerobot是golang写的
+20:20:22[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166230],[445970246]]zerobot是golang写的,groupName:双辽理工大学,userCard:QQ群管家
+20:20:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166231],[1213272957]]行
+20:20:33[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166231],[1213272957]]行,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:20:41[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166232],[338444742]]那个nonebot好用吗
+20:20:41[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166232],[338444742]]那个nonebot好用吗,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:20:44[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166233],[158774859]]zerobot我直接搬过来了
+20:20:44[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166233],[158774859]]zerobot我直接搬过来了,groupName:双辽理工大学,userCard:QQ群管家
+20:20:51[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166234],[617145601]]nonebot我不知道是什么
+20:20:51[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166234],[617145601]]nonebot我不知道是什么,groupName:双辽理工大学,userCard:QQ群管家
+20:20:55[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166235],[1987829548]]和ariadne哪个好一点
+20:20:55[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166235],[1987829548]]和ariadne哪个好一点,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:21:01[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166236],[1849319972]]嘶
+20:21:01[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166236],[1849319972]]嘶,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:21:06[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166237],[1166668851]]那我再看看吧
+20:21:06[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166237],[1166668851]]那我再看看吧,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:21:16[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166238],[1256767199]]我准备看看
+20:21:16[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166238],[1256767199]]我准备看看,groupName:双辽理工大学,userCard:QQ群管家
+20:21:43[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166239],[1482784314]]ariadne那边，github有个叫abot的项目
+20:21:43[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166239],[1482784314]]ariadne那边，github有个叫abot的项目,groupName:双辽理工大学,userCard:QQ群管家
+20:21:56[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166240],[1005753825]]现成的很多功能
+20:21:56[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166240],[1005753825]]现成的很多功能,groupName:双辽理工大学,userCard:QQ群管家
+20:22:15[DefaultDispatcher-worker-2] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:2153708970,userNick:nullptr,msg:[mirai:source:[166241],[1447462703]]我也直接抄了
+20:22:15[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:nullptr,userId:2153708970,msg:%[mirai:source:[166241],[1447462703]]我也直接抄了,groupName:双辽理工大学,userCard:QQ群管家
+20:23:36[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:3313445307,userNick:soulspace,msg:[mirai:source:[166242],[1261406636]]Python的注解我用得少，但是现在来看注解真好玩
+20:23:36[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:soulspace,userId:3313445307,msg:%[mirai:source:[166242],[1261406636]]Python的注解我用得少，但是现在来看注解真好玩,groupName:双辽理工大学,userCard:群主不女装（小丑🤡）
+20:25:30[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166243],[251479516]][mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1643113530,"forward":1,"height":0,"token":"29d78e417710ee269e5697c02d7fb274","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":1223494503},"meta":{"detail_1":{"appid":"1109937557","desc":"春晚预测小品《生三胎》","gamePoints":"","gamePointsUrl":"","host":{"nick":"孙雨长","uin":1223494503},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1640166716","preview":"pubminishare-30161.picsz.qpic.cn/3aa33e26-99c6-4870-af7f-e7043048a835","qqdocurl":"https://b23.tv/olcQj53?share_medium=android&share_source=qq&bbid=XYA1198ACCF6395AA1277B4B01B118F01AA26&ts=1643113524603","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/b9a51782dfdaebbef75dde71d1160651"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}]
+20:25:30[DefaultDispatcher-worker-4] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166243],[251479516]][mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1643113530,"forward":1,"height":0,"token":"29d78e417710ee269e5697c02d7fb274","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":1223494503},"meta":{"detail_1":{"appid":"1109937557","desc":"春晚预测小品《生三胎》","gamePoints":"","gamePointsUrl":"","host":{"nick":"孙雨长","uin":1223494503},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1640166716","preview":"pubminishare-30161.picsz.qpic.cn/3aa33e26-99c6-4870-af7f-e7043048a835","qqdocurl":"https://b23.tv/olcQj53?share_medium=android&share_source=qq&bbid=XYA1198ACCF6395AA1277B4B01B118F01AA26&ts=1643113524603","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/b9a51782dfdaebbef75dde71d1160651"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}],groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+20:25:42[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到其他消息} userId:1223494503,userNick:孙雨长,msg:[mirai:source:[166244],[1237479155]]真题做多了，自己就会出题了
+20:25:42[DefaultDispatcher-worker-5] INFO  xyz.soulspace.cinder.event.MessageEvents - {接收到群消息} groupId:197028289,userNick:孙雨长,userId:1223494503,msg:%[mirai:source:[166244],[1237479155]]真题做多了，自己就会出题了,groupName:双辽理工大学,userCard:大丑🤡（孙雨长）
+20:30:20[SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...

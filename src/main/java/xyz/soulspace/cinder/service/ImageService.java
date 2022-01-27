@@ -26,7 +26,6 @@ public class ImageService {
     @Value("${saucenao.key:}")
     private String saucenaoKey;
 
-
     @Autowired
     private ProxyService proxyService;
 

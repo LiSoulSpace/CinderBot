@@ -90,6 +90,5 @@ public class CinderBot implements ApplicationRunner {
         new Thread(() -> {
             bot.join();
         }).start();
-
     }
 }

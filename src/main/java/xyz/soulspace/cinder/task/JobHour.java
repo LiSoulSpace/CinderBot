@@ -70,19 +70,39 @@ public class JobHour {
         switch (hourNow) {
             //半夜0点
             case 0:
-                return ConstantCommon.NEXT_LINE + "新的一天开始啦ヽ(#`Д´)ノ";
+                return ConstantCommon.NEXT_LINE + "新的一天开始啦，请注意休息哦";
+            case 1:
+                return ConstantCommon.NEXT_LINE + "丑时已到";
+            case 3:
+                return ConstantCommon.NEXT_LINE + "寅时已到";
             //凌晨4点
             case 4:
                 return ConstantCommon.NEXT_LINE + "还有人活着嘛，有的话去睡觉哦~";
+            case 5:
+                return ConstantCommon.NEXT_LINE + "卯时已到";
             //早上7点
             case 7:
-                return ConstantCommon.NEXT_LINE + "早上好,该起床了哦~~";
+                return ConstantCommon.NEXT_LINE + "早上好,该起床了哦~~" + ConstantCommon.NEXT_LINE + "辰时已到";
+            case 9:
+                return ConstantCommon.NEXT_LINE + "巳时已到";
+            case 11:
+                return ConstantCommon.NEXT_LINE + "午时已到";
             //中午12点
             case 12:
                 return ConstantCommon.NEXT_LINE + "午安，该是吃午饭的时间了";
+            case 13:
+                return ConstantCommon.NEXT_LINE + "未时已到";
+            case 15:
+                return ConstantCommon.NEXT_LINE + "申时已到";
+            case 17:
+                return ConstantCommon.NEXT_LINE + "酉时已到";
+            case 19:
+                return ConstantCommon.NEXT_LINE + "戌时已到";
+            case 21:
+                return ConstantCommon.NEXT_LINE + "亥时已到";
             //晚上23点
             case 23:
-                return ConstantCommon.NEXT_LINE + "已经很晚了，早点休息哦~~";
+                return ConstantCommon.NEXT_LINE + "子时已到，早点休息哦~~";
         }
         return "";
     }
