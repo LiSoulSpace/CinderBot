@@ -18,9 +18,6 @@ async def baiduHotSearchGet():
         url = "https://top.baidu.com/board?tab=realtime"
         async with session.get(url) as response:
             html = await response.text()
-            f = open("baiduSearch.html", "w+")
-            f.write(html)
-            f.close()
             html = etree.HTML(html)
             t = []
             for i in range(1, 31):
