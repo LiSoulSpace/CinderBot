@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class CommandConfig {
     private static final Logger logger = LoggerFactory.getLogger(CommandConfig.class);
 
-    private static Set<String> commandHeads = new HashSet<>();
+    private static final Set<String> commandHeads = new HashSet<>();
 
     public static Map<String, Command> everywhereCommands = new HashMap<>();
     public static Map<String, Command> friendCommands = new HashMap<>();

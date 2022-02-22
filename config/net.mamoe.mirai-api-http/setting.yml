@@ -1,0 +1,28 @@
+adapters: 
+  - http
+  - ws
+debug: true
+enableVerify: true
+verifyKey: soulspacesoul
+singleMode: false
+cacheSize: 4096
+adapterSettings:
+  http:
+    host: localhost
+    port: 12569
+    cors: [*]
+  ws:
+    host: localhost
+    port: 12569
+    reservedSyncId: -1
+  reverse-ws:
+    destinations:
+      ## 请远端 server host
+      - host: localhost
+        port: 12566
+        ## 请求路径
+        path: /onebot/v11/ws
+        ## 协议，[ws, wss]
+        protocol: ws
+        ## 请求方式，通常为 GET
+        method: GET

@@ -2,7 +2,7 @@ package xyz.soulspace.cinder.config;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
-import xyz.soulspace.cinder.pojo.User;
+import xyz.soulspace.cinder.generator.entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

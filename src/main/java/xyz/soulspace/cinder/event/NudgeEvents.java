@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import xyz.soulspace.cinder.constant.ConstantBlackList;
+import xyz.soulspace.cinder.constant.ConstantBlockList;
 import xyz.soulspace.cinder.service.NudgeService;
 
 @Component
@@ -40,7 +40,7 @@ public class NudgeEvents extends SimpleListenerHost {
         logger.info("戳一戳事件,来自:{}({}),目标:{}({})", fromUser.getId(), fromUser.getNick(), targetUser.getId(), targetUser.getNick());
 
         //黑名单，用来防止和其他机器人死循环响应，或者屏蔽恶意人员
-        if (ConstantBlackList.BLACK_LIST.contains(event.getFrom().getId())) {
+        if (ConstantBlockList.BLACK_LIST.contains(event.getFrom().getId())) {
             return ListeningStatus.LISTENING;
         }
 

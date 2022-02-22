@@ -1,7 +1,9 @@
 package xyz.soulspace.cinder.bot;
 
+import kotlin.Lazy;
 import net.mamoe.mirai.Bot;
 import net.mamoe.mirai.BotFactory;
+import net.mamoe.mirai.console.terminal.MiraiConsoleTerminalLoader;
 import net.mamoe.mirai.event.GlobalEventChannel;
 import net.mamoe.mirai.event.ListenerHost;
 import net.mamoe.mirai.utils.BotConfiguration;
@@ -63,7 +65,7 @@ public class CinderBot implements ApplicationRunner {
         bot = BotFactory.INSTANCE.newBot(botAccount, botPwd, new BotConfiguration() {
             {
                 fileBasedDeviceInfo(deviceInfo);
-                setProtocol(MiraiProtocol.ANDROID_WATCH);
+                setProtocol(MiraiProtocol.ANDROID_PHONE);//TODO 上线改成ANDROID_PHONE
             }
         });
         bot.login();
@@ -87,8 +89,9 @@ public class CinderBot implements ApplicationRunner {
 
         // 这个和picbotx 还是不太一样 那个不会占用主线程
         // 这里必须要启新线程去跑bot 不然会占用主线程
-        new Thread(() -> {
-            bot.join();
-        }).start();
+//        new Thread(() -> {
+//            bot.join();
+//        }).start();
+//        MiraiConsoleTerminalLoader.main(new String[]{});
     }
 }

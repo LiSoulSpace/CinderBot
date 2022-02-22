@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import xyz.soulspace.cinder.command.*;
-import xyz.soulspace.cinder.constant.ConstantBlackList;
+import xyz.soulspace.cinder.constant.ConstantBlockList;
 import xyz.soulspace.cinder.service.KeyWordService;
 import xyz.soulspace.cinder.utils.StringUtil;
 
@@ -56,7 +56,7 @@ public class MessageEvents extends SimpleListenerHost {
         logger.info("{接收到其他消息} userId:{},userNick:{},msg:{}", sender.getId(), sender.getNick(), event.getMessage().toString());
 
         //黑名单，用来防止和其他机器人死循环响应，或者屏蔽恶意人员
-        if (ConstantBlackList.BLACK_LIST.contains(sender.getId())) {
+        if (ConstantBlockList.BLACK_LIST.contains(sender.getId())) {
             return ListeningStatus.LISTENING;
         }
 
@@ -95,7 +95,7 @@ public class MessageEvents extends SimpleListenerHost {
         logger.info("{接收到好友消息} userId:{},userNick:{},msg:{}", sender.getId(), sender.getNick(), event.getMessage().toString());
 
         //黑名单，用来防止和其他机器人死循环响应，或者屏蔽恶意人员
-        if (ConstantBlackList.BLACK_LIST.contains(sender.getId())) {
+        if (ConstantBlockList.BLACK_LIST.contains(sender.getId())) {
             return ListeningStatus.LISTENING;
         }
 
@@ -136,7 +136,7 @@ public class MessageEvents extends SimpleListenerHost {
                 event.getGroup().getId(), sender.getNick(), sender.getId(), event.getMessage().toString(), event.getGroup().getName(), event.getSender().getNameCard());
 
         //黑名单，用来防止和其他机器人死循环响应，或者屏蔽恶意人员
-        if (ConstantBlackList.BLACK_LIST.contains(sender.getId())) {
+        if (ConstantBlockList.BLACK_LIST.contains(sender.getId())) {
             return ListeningStatus.LISTENING;
         }
 
@@ -189,7 +189,7 @@ public class MessageEvents extends SimpleListenerHost {
         logger.info("{接收到临时消息} userId:{},userNick:{},msg:{}", sender.getId(), sender.getNick(), event.getMessage().toString());
 
         //黑名单，用来防止和其他机器人死循环响应，或者屏蔽恶意人员
-        if (ConstantBlackList.BLACK_LIST.contains(sender.getId())) {
+        if (ConstantBlockList.BLACK_LIST.contains(sender.getId())) {
             return ListeningStatus.LISTENING;
         }
 

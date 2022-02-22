@@ -5,7 +5,6 @@ import net.mamoe.mirai.contact.User;
 import net.mamoe.mirai.message.data.Message;
 import net.mamoe.mirai.message.data.MessageChain;
 import xyz.soulspace.cinder.command.EverywhereCommand;
-import xyz.soulspace.cinder.pojo.CommandProperties;
 
 import java.util.ArrayList;
 

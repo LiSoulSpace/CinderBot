@@ -14,10 +14,10 @@ public class MyMvcConfig implements WebMvcConfigurer {
 //        registry.addViewController("/main.html").setViewName("dashbord");
 //    }
 
-    @Bean
-    public LoginHandlerInterceptor getLoginInterceptor() {
-        return new LoginHandlerInterceptor();
-    }
+//    @Bean
+//    public LoginHandlerInterceptor getLoginInterceptor() {
+//        return new LoginHandlerInterceptor();
+//    }
 
 //    @Override
 //    public void addInterceptors(InterceptorRegistry registry) {

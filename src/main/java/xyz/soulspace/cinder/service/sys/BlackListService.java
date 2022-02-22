@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import xyz.soulspace.cinder.constant.ConstantBlackList;
+import xyz.soulspace.cinder.constant.ConstantBlockList;
 import xyz.soulspace.cinder.utils.FileUtil;
 import xyz.soulspace.cinder.utils.NumberUtil;
 
@@ -25,7 +25,7 @@ public class BlackListService {
 
     public void loadFile() {
         try {
-            ConstantBlackList.BLACK_LIST = this.loadList();
+            ConstantBlockList.BLACK_LIST = this.loadList();
         } catch (Exception ex) {
             logger.error("黑名单信息读取失败", ex);
         }

@@ -6,13 +6,11 @@ import net.mamoe.mirai.message.data.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import xyz.soulspace.cinder.pojo.CommandProperties;
+import xyz.soulspace.cinder.entity.CommandProperties;
 import xyz.soulspace.cinder.service.CinderBotService;
 import xyz.soulspace.cinder.service.HotPointNewsService;
 import xyz.soulspace.cinder.sys.annotate.Command;
 
-import java.io.File;
 import java.util.ArrayList;
 
 @Command

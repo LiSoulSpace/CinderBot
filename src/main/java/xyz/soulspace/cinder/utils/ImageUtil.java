@@ -2,13 +2,12 @@ package xyz.soulspace.cinder.utils;
 
 import lombok.experimental.UtilityClass;
 import xyz.soulspace.cinder.constant.ConstantImage;
-import xyz.soulspace.cinder.pojo.ImageInfo;
+import xyz.soulspace.cinder.entity.ImageInfo;
 
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 import java.io.*;
-import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.util.Arrays;
