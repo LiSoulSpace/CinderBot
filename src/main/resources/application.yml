@@ -1,0 +1,6 @@
+spring:
+  test:
+    database:
+      replace: auto_configured
+  profiles:
+    active: dev
