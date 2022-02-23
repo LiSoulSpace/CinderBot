@@ -17,5 +17,20 @@
     <sql id="Base_Column_List">
         id, holiday_name, holiday_date, info, is_lunar, create_time, update_time
     </sql>
+    <select id="selectHolidayDateAndIsLunarByHolidayName" resultMap="BaseResultMap">
+        select holiday_date, is_lunar
+        from t_holiday
+        where holiday_name = #{holidayName,jdbcType=VARCHAR}
+    </select>
+    <update id="updateHolidayDateByHolidayName">
+        update t_holiday
+        set holiday_date = #{holidayDate}
+        where holiday_name = #{holidayName,jdbcType=VARCHAR}
+    </update>
+    <select id="selectHolidayDateByHolidayName" resultMap="BaseResultMap">
+        select holiday_date
+        from t_holiday
+        where holiday_name = #{holidayName,jdbcType=VARCHAR}
+    </select>
 
 </mapper>

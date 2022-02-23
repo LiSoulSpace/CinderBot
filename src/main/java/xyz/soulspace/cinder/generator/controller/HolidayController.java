@@ -1,5 +1,6 @@
 package xyz.soulspace.cinder.generator.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,7 @@ public class HolidayController {
 
     @GetMapping("/api/getHolidays")
     @ResponseBody
+    @Tag(name = "获取所有假日信息")
     public List<Holiday> getHolidays(){
         List<Holiday> holidayList = holidayService.list();
         return holidayList;

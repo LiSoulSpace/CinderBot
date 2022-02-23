@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import xyz.soulspace.cinder.bot.CinderBot;
 import xyz.soulspace.cinder.constant.ConstantCommon;
 import xyz.soulspace.cinder.service.sys.ConfigService;
-import xyz.soulspace.cinder.utils.DateUtil;
+import xyz.soulspace.cinder.utils.MyDateUtil;
 import xyz.soulspace.cinder.utils.RandomUtil;
 
 import java.util.Date;
@@ -36,7 +36,7 @@ public class JobHour {
     @Scheduled(cron = "0 0 * * * ?")
     public void execute() {
         //刷新当前时间
-        hourNow = DateUtil.getHour();
+        hourNow = MyDateUtil.getHour();
 
         //报时兔子
 //        timeRabbit();
@@ -52,7 +52,7 @@ public class JobHour {
         String msgEx = getMsgEx();
 
         //群报时，时间间隔交给定时器，这里返回值取当前时间即可
-        String msg = String.format("这里是%s报时：%s%s", cinderBotName, DateUtil.toString(new Date()), msgEx);
+        String msg = String.format("这里是%s报时：%s%s", cinderBotName, MyDateUtil.toString(new Date()), msgEx);
         try {
             //给每个群发送报时
             ContactList<Group> groupList = CinderBot.getBot().getGroups();

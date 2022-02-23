@@ -1,7 +1,7 @@
 package xyz.soulspace.cinder.service.greetings;
 
 
-import xyz.soulspace.cinder.utils.DateUtil;
+import xyz.soulspace.cinder.utils.MyDateUtil;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,7 +16,7 @@ public class GreetingsNight extends GreetingsBase {
     @Override
     protected List<String> beforeDawn() {
         return Arrays.asList(
-                "都凌晨" + DateUtil.getHour() + "点了，赶紧睡觉去",
+                "都凌晨" + MyDateUtil.getHour() + "点了，赶紧睡觉去",
                 "都几点了还不睡觉，等着猝死吧！",
                 "这都几点了，竟然还有人不睡觉"
         );
@@ -34,7 +34,7 @@ public class GreetingsNight extends GreetingsBase {
     @Override
     protected List<String> noon() {
         return Arrays.asList(
-                "晚上好，你看这都" + DateUtil.getHour() + "点了",
+                "晚上好，你看这都" + MyDateUtil.getHour() + "点了",
                 "。。。",
                 "大中午的被太阳晒出幻觉了嘛",
                 "您可能是IE浏览器的受害者",

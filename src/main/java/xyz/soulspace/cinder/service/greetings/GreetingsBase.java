@@ -1,6 +1,6 @@
 package xyz.soulspace.cinder.service.greetings;
 
-import xyz.soulspace.cinder.utils.DateUtil;
+import xyz.soulspace.cinder.utils.MyDateUtil;
 import xyz.soulspace.cinder.utils.RandomUtil;
 
 import java.util.List;
@@ -22,7 +22,7 @@ public abstract class GreetingsBase {
     public String getGreetingsByTime() {
         List<String> resultList = null;
 
-        int hour = DateUtil.getHour();
+        int hour = MyDateUtil.getHour();
         switch (hour) {
             case 2:
             case 3:

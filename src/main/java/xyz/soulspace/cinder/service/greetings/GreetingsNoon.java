@@ -1,7 +1,7 @@
 package xyz.soulspace.cinder.service.greetings;
 
 
-import xyz.soulspace.cinder.utils.DateUtil;
+import xyz.soulspace.cinder.utils.MyDateUtil;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +19,7 @@ public class GreetingsNoon extends GreetingsBase {
                 "？",
                 "你是在地球的另一端嘛",
                 "又疯一个，没救了",
-                "别闹了，都凌晨" + DateUtil.getHour() + "点了，赶紧睡觉去",
+                "别闹了，都凌晨" + MyDateUtil.getHour() + "点了，赶紧睡觉去",
                 "都几点了还不睡觉，等着猝死吧！"
         );
     }

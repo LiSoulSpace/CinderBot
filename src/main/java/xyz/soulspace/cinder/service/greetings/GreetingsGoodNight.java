@@ -1,6 +1,6 @@
 package xyz.soulspace.cinder.service.greetings;
 
-import xyz.soulspace.cinder.utils.DateUtil;
+import xyz.soulspace.cinder.utils.MyDateUtil;
 
 import java.util.Arrays;
 import java.util.List;
@@ -43,7 +43,7 @@ public class GreetingsGoodNight extends GreetingsBase {
         return Arrays.asList(
                 "晚安。。。？",
                 "现在睡觉是不是太早了点",
-                "这才" + DateUtil.getHour() + "点，睡的这么早嘛"
+                "这才" + MyDateUtil.getHour() + "点，睡的这么早嘛"
         );
     }
 

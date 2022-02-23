@@ -1,7 +1,7 @@
 package xyz.soulspace.cinder.service.greetings;
 
 
-import xyz.soulspace.cinder.utils.DateUtil;
+import xyz.soulspace.cinder.utils.MyDateUtil;
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +40,7 @@ public class GreetingsMorning extends GreetingsBase {
     @Override
     protected List<String> noon() {
         return Arrays.asList(
-                "早。。？\n都" + DateUtil.getHour() + "点了，才起床啊",
+                "早。。？\n都" + MyDateUtil.getHour() + "点了，才起床啊",
                 "都几点了，还早安，该吃午饭了",
                 "已经是中午了",
                 "现在已经中午啦！\n赶紧起床吃饭",
@@ -54,7 +54,7 @@ public class GreetingsMorning extends GreetingsBase {
     @Override
     protected List<String> afternoon() {
         return Arrays.asList(
-                "早。。？\n都" + DateUtil.getHour() + "点了，才起床啊",
+                "早。。？\n都" + MyDateUtil.getHour() + "点了，才起床啊",
                 "早啊早啊，不仅节省了一顿早饭，连午饭也省了",
                 "这都几点了，睡死算了",
                 "已经是下午了",
