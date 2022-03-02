@@ -1,17 +1,16 @@
 package xyz.soulspace.cinder.generator.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ResponseBody;
 import xyz.soulspace.cinder.generator.entity.Holiday;
 import xyz.soulspace.cinder.generator.service.HolidayService;
 
@@ -19,7 +18,7 @@ import java.util.List;
 
 /**
  * <p>
- *  前端控制器
+ * Holiday控制器
  * </p>
  *
  * @author soulspace
@@ -28,6 +27,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/generator/holiday")
 @CrossOrigin
+@Tag(name = "节日控制器(HolidayController)")
 public class HolidayController {
     private static final Logger LOGGER = LoggerFactory.getLogger(HolidayController.class);
 
@@ -39,9 +39,26 @@ public class HolidayController {
 
     @GetMapping("/api/getHolidays")
     @ResponseBody
-    @Tag(name = "获取所有假日信息")
-    public List<Holiday> getHolidays(){
+    @Operation(summary = "获取所有假日信息")
+    public List<Holiday> getHolidays() {
         List<Holiday> holidayList = holidayService.list();
         return holidayList;
+    }
+
+    @RequestMapping(value = "/api/getDaysToHolidayByName/{holidayName}", method = RequestMethod.GET)
+    @ResponseBody
+    @Operation(summary = "获取距离某节日的天数")
+    public double getDaysToHolidayByName(@PathVariable("holidayName") String holidayName) {
+        int intervalToHolidayByName = holidayService.getIntervalToHolidayByName(holidayName);
+        double days = (double) intervalToHolidayByName / 24.0;
+        return days;
+    }
+
+    @RequestMapping(value = "/api/getHoursToHolidayByName/{holidayName}", method = RequestMethod.GET)
+    @ResponseBody
+    @Operation(summary = "获取距离某节日的小时数")
+    public int getHoursToHolidayByName(@PathVariable("holidayName") String holidayName) {
+        int intervalToHolidayByName = holidayService.getIntervalToHolidayByName(holidayName);
+        return intervalToHolidayByName;
     }
 }

@@ -23,5 +23,5 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
 mybatis:
-  type-aliases-package: xyz.soulspace.cinder.entity
+  type-aliases-package: xyz.soulspace.cinder.pojo
   mapper-locations: classpath:mybatis/mapper/*.xml

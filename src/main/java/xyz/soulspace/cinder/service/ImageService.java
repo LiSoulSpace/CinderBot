@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import xyz.soulspace.cinder.constant.ConstantCommon;
 import xyz.soulspace.cinder.constant.ConstantConfig;
 import xyz.soulspace.cinder.constant.ConstantImage;
-import xyz.soulspace.cinder.entity.ImageInfo;
+import xyz.soulspace.cinder.pojo.ImageInfo;
 import xyz.soulspace.cinder.service.sys.ProxyService;
 import xyz.soulspace.cinder.utils.*;
 

@@ -1,6 +1,6 @@
 package xyz.soulspace.cinder.command;
 
-import xyz.soulspace.cinder.entity.CommandProperties;
+import xyz.soulspace.cinder.pojo.CommandProperties;
 
 public interface Command {
 

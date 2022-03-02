@@ -17,7 +17,8 @@ import java.time.LocalDateTime;
  */
 public interface HolidayService extends IService<Holiday> {
     int getIntervalToHolidayByName(@Param("holidayName") String holidayName);
-    boolean checkIsOutdatedByName(@Param("holidayName") String holidayName);
+    boolean checkIsOutdatedByName(@Param("holidayName") String holidayName, @Param("endLocalDateTime")LocalDateTime endLocalDateTime);
     boolean updateNextDateByName(@Param("holidayName") String holidayName);
     LocalDateTime getLocalDateTimeByName(@Param("holidayName") String holidayName);
+    boolean isWeekendToday();
 }

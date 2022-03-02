@@ -32,8 +32,15 @@ public class Generator {
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, property + "/src/main/resources/mapper")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
-                    builder.addInclude("t_holiday", "c_user") // 设置需要生成的表名
-                            .addTablePrefix("t_", "c_") // 设置过滤表前缀
+                    builder.addInclude("ums_admin",
+                                    "ums_admin_login_log",
+                                    "ums_admin_permission_relation",
+                                    "ums_admin_role_relation",
+                                    "ums_growth_change_history",
+                                    "ums_integration_change_history",
+                                    "ums_integration_consume_setting"
+                            ) // 设置需要生成的表名
+                            .addTablePrefix("ums_", "t_") // 设置过滤表前缀
                             .entityBuilder()
                             .disableSerialVersionUID()
                             .enableLombok()

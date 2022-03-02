@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 import xyz.soulspace.cinder.utils.MyDateUtil;
 
 import java.time.*;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -26,21 +27,28 @@ import java.util.List;
  * @since 2022-02-22
  */
 @Service
-public class HolidayServiceImp extends ServiceImpl<HolidayMapper, Holiday> implements HolidayService {
+public class HolidayServiceImp extends ServiceImpl<HolidayMapper, Holiday>
+        implements HolidayService {
     public static final Logger LOGGER = LoggerFactory.getLogger(HolidayServiceImp.class);
 
+    final HolidayMapper holidayMapper;
+
     @Autowired
-    HolidayMapper holidayMapper;
+    public HolidayServiceImp(HolidayMapper holidayMapper) {
+        this.holidayMapper = holidayMapper;
+    }
 
     @Override
     public int getIntervalToHolidayByName(String holidayName) {
-        LocalDateTime startLocalDateTime = LocalDateTime.now();
         LocalDateTime endLocalDateTime = getLocalDateTimeByName(holidayName);
-        List<Holiday> holidayList = holidayMapper.selectHolidayDateAndIsLunarByHolidayName(holidayName);
+        if (checkIsOutdatedByName(holidayName, endLocalDateTime)) {
+            updateNextDateByName(holidayName);
+        }
+        LocalDateTime startLocalDateTime = LocalDateTime.now();
         try {
             Duration between = LocalDateTimeUtil.between(startLocalDateTime, endLocalDateTime);
-            long days = between.toDays() + 1;
-            return (int) days;
+            long hours = between.toHours();
+            return (int) hours;
         } catch (Exception e) {
             LOGGER.warn(e.getMessage());
         }
@@ -48,34 +56,41 @@ public class HolidayServiceImp extends ServiceImpl<HolidayMapper, Holiday> imple
     }
 
     @Override
-    public boolean checkIsOutdatedByName(String holidayName) {
+    public boolean checkIsOutdatedByName(String holidayName, LocalDateTime endLocalDateTime) {
         LocalDateTime startLocalDateTime = LocalDateTime.now();
-        LocalDateTime endLocalDateTime = getLocalDateTimeByName(holidayName);
         try {
             Duration between = LocalDateTimeUtil.between(startLocalDateTime, endLocalDateTime);
-            long days = between.toDays();
-            if (days < 0) return true;
+            long minutes = between.toMinutes();
+            if (minutes <= 0) return true;
         } catch (Exception e) {
             LOGGER.warn(e.getMessage());
         }
         return false;
     }
 
+    /**
+     * 更新节日的日期
+     * @param holidayName 节日的名字
+     * @return 更新是否成功
+     */
     @Override
     public boolean updateNextDateByName(String holidayName) {
-        if (checkIsOutdatedByName(holidayName)) {
-            List<Holiday> holidays = holidayMapper.selectHolidayDateByHolidayName(holidayName);
-            LocalDate holidayDate = holidays.get(0).getHolidayDate();
-            LocalDate newHolidayDate = holidayDate;
-            if(holidayName.equals("周末"))
-                newHolidayDate = holidayDate.plusYears(1);
-            else newHolidayDate = holidayDate.plusDays(7);
-            int i = holidayMapper.updateHolidayDateByHolidayName(newHolidayDate, holidayName);
-            if (i > 0) return true;
-            else return false;
-        } else return false;
+        List<Holiday> holidays = holidayMapper.selectHolidayDateByHolidayName(holidayName);
+        LocalDate holidayDate = holidays.get(0).getHolidayDate();
+        LocalDate newHolidayDate = holidayDate;
+        if (holidayName.equals("周末"))
+            newHolidayDate = holidayDate.plusDays(7);
+        else newHolidayDate = holidayDate.plusYears(1);
+        int i = holidayMapper.updateHolidayDateByHolidayName(newHolidayDate, holidayName);
+        if (i > 0) return true;
+        else return false;
     }
 
+    /**
+     * 获取节日的 LocalDataTime 通过节日的名字
+     * @param holidayName 节日名字
+     * @return 节日的日期(当天0时0分)
+     */
     @Override
     public LocalDateTime getLocalDateTimeByName(String holidayName) {
         List<Holiday> holidayList = holidayMapper.selectHolidayDateAndIsLunarByHolidayName(holidayName);
@@ -96,8 +111,21 @@ public class HolidayServiceImp extends ServiceImpl<HolidayMapper, Holiday> imple
             );
             return endLocalDate;
         } else {
-            LocalDateTime endLocalDate = holiday.getHolidayDate().atStartOfDay();
+            LocalDateTime endLocalDate = holiday.getHolidayDate().atTime(0, 0);
             return endLocalDate;
         }
+    }
+
+    /**
+     * 判断今天是不是周末
+     * @return 是则返回 true
+     */
+    @Override
+    public boolean isWeekendToday() {
+        Calendar instance = Calendar.getInstance();
+        int dayOfWeek = instance.get(Calendar.DAY_OF_WEEK);
+        if (dayOfWeek == 1 || dayOfWeek == 7) {
+            return true;
+        } else return false;
     }
 }

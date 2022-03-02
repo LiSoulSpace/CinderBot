@@ -65,7 +65,7 @@ public class CinderBot implements ApplicationRunner {
         bot = BotFactory.INSTANCE.newBot(botAccount, botPwd, new BotConfiguration() {
             {
                 fileBasedDeviceInfo(deviceInfo);
-                setProtocol(MiraiProtocol.ANDROID_PHONE);//TODO 上线改成ANDROID_PHONE
+                setProtocol(MiraiProtocol.ANDROID_WATCH);//TODO 上线改成ANDROID_PHONE
             }
         });
         bot.login();

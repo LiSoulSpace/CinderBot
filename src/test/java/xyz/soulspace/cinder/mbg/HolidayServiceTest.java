@@ -12,7 +12,9 @@ import xyz.soulspace.cinder.generator.mapper.HolidayMapper;
 import xyz.soulspace.cinder.generator.service.HolidayService;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Month;
+import java.util.Calendar;
 
 @SpringBootTest
 public class HolidayServiceTest {
@@ -23,6 +25,13 @@ public class HolidayServiceTest {
     HolidayMapper holidayMapper;
 
     @Test
+    void testWeekend(){
+        Calendar instance = Calendar.getInstance();
+        LOGGER.info(instance.toString());
+        LOGGER.info(String.valueOf(instance.get(Calendar.DAY_OF_WEEK)));
+    }
+
+    @Test
     void testGetIntervalToHolidayByName() {
         int intervalToHolidayByName =
                 holidayService.getIntervalToHolidayByName("周末");
@@ -31,7 +40,7 @@ public class HolidayServiceTest {
 
     @Test
     void testCheckIsOutdatedByName() {
-        boolean b = holidayService.checkIsOutdatedByName("元宵节");
+        boolean b = holidayService.checkIsOutdatedByName("周末", holidayService.getLocalDateTimeByName("周末"));
         LOGGER.info(String.valueOf(b));
     }
 
