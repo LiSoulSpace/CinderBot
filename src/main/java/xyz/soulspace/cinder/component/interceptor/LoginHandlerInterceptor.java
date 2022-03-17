@@ -1,9 +1,8 @@
 package xyz.soulspace.cinder.component.interceptor;
 
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-import xyz.soulspace.cinder.generator.entity.User;
+import xyz.soulspace.cinder.api.entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

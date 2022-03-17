@@ -2,13 +2,11 @@ package xyz.soulspace.cinder.component.security;
 
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-/**
- * 动态权限相关业务类
- */
-@Component
+
 public interface DynamicSecurityService {
     /**
      * 加载资源ANT通配符和资源对应MAP

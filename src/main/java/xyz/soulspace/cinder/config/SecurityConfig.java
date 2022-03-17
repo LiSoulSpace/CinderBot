@@ -1,5 +1,7 @@
 package xyz.soulspace.cinder.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
@@ -10,21 +12,22 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import xyz.soulspace.cinder.component.security.*;
 
-
 /**
  * 对SpringSecurity配置类的扩展，支持自定义白名单资源路径和查询用户逻辑
- * Created by macro on 2019/11/5.
  */
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    public static final Logger LOGGER = LoggerFactory.getLogger(SecurityConfig.class);
 
     @Autowired(required = false)
     private DynamicSecurityService dynamicSecurityService;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
@@ -57,20 +60,22 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .addFilterBefore(jwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         //有动态权限配置时添加动态权限校验过滤器
-        if(dynamicSecurityService!=null){
+        if (dynamicSecurityService != null) {
             registry.and().addFilterBefore(dynamicSecurityFilter(), FilterSecurityInterceptor.class);
         }
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//        auth.userDetailsService(userDetailsService())
+//                .passwordEncoder(passwordEncoder);
+//        auth.inMemoryAuthentication()
+//                .withUser("admin")
+//                .password(passwordEncoder.encode("soulspace132"))
+//                .authorities("ADMIN");
         auth.userDetailsService(userDetailsService())
-                .passwordEncoder(passwordEncoder());
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+                        .passwordEncoder(passwordEncoder);
+//        LOGGER.warn(passwordEncoder.encode("123456"));
     }
 
     @Bean
@@ -97,11 +102,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public IgnoreUrlsConfig ignoreUrlsConfig() {
         return new IgnoreUrlsConfig();
-    }
-
-    @Bean
-    public JwtTokenUtil jwtTokenUtil() {
-        return new JwtTokenUtil();
     }
 
     @ConditionalOnBean(name = "dynamicSecurityService")

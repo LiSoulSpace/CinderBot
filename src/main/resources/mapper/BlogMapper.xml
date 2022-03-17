@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.soulspace.cinder.api.mapper.BlogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="xyz.soulspace.cinder.api.entity.Blog">
+        <id column="id" property="id"/>
+        <result column="markdown_entity" property="markdownEntity"/>
+        <result column="html_entity" property="htmlEntity"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_time" property="createTime"/>
+        <result column="user_id" property="userId"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        markdown_entity, id, html_entity, update_time, create_time, user_id
+    </sql>
+    <select id="selectMarkdownEntityByUserId" resultMap="BaseResultMap">
+        select markdown_entity
+        from bms_blog
+        where user_id = #{userId,jdbcType=NUMERIC}
+    </select>
+    <select id="selectHtmlEntityByUserId" resultMap="BaseResultMap">
+        select html_entity
+        from bms_blog
+        where user_id = #{userId,jdbcType=NUMERIC}
+    </select>
+    <select id="selectByTitle" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from bms_blog
+        where
+        title = #{title,jdbcType=VARCHAR}
+    </select>
+    <select id="selectBlogSummaryByPage" resultType="xyz.soulspace.cinder.dto.BlogSummary">
+        select id, title, update_time, summary
+        from bms_blog
+        where title like concat('%', #{keyword} , '%')
+        limit #{offset}, #{pageNum}
+    </select>
+
+</mapper>

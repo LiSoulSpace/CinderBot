@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="xyz.soulspace.cinder.generator.mapper.IntegrationConsumeSettingMapper">
+<mapper namespace="xyz.soulspace.cinder.api.mapper.IntegrationConsumeSettingMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="xyz.soulspace.cinder.generator.entity.IntegrationConsumeSetting">
+    <resultMap id="BaseResultMap" type="xyz.soulspace.cinder.api.entity.IntegrationConsumeSetting">
         <id column="id" property="id" />
         <result column="deduction_per_amount" property="deductionPerAmount" />
         <result column="max_percent_per_order" property="maxPercentPerOrder" />

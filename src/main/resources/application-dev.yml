@@ -53,9 +53,13 @@ spring:
 springdoc:
   swagger-ui:
     path: /swagger-ui
+    enabled: true
+    use-root-path: false
+    disable-swagger-default-url: true
   api-docs:
     enabled: true
-    path: /rest-api-docs
+    path: /api-docs
+  packages-to-scan: xyz.soulspace.cinder.api.controller, xyz.soulspace.cinder.controller
 
 mybatis-plus:
   global-config:

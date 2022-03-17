@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@MapperScan({"xyz.soulspace.cinder.mapper", "xyz.soulspace.cinder.generator.mapper"})
+@MapperScan({"xyz.soulspace.cinder.mapper", "xyz.soulspace.cinder.api.mapper"})
 @EnableTransactionManagement
 @Configuration
 public class MyBatisConfig {

@@ -3,11 +3,7 @@ import com.baomidou.mybatisplus.test.autoconfigure.MybatisPlusTest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import xyz.soulspace.cinder.generator.entity.Holiday;
-import xyz.soulspace.cinder.generator.mapper.HolidayMapper;
-
-import java.util.Arrays;
-import java.util.List;
+import xyz.soulspace.cinder.api.mapper.HolidayMapper;
 
 @MybatisPlusTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)

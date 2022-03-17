@@ -34,6 +34,26 @@
       "name": "file.path.data",
       "type": "java.lang.String",
       "description": "Description for file.path.data."
+    },
+    {
+      "name": "jwt.tokenHeader",
+      "type": "java.lang.String",
+      "description": "Description for jwt.tokenHeader."
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Description for jwt.secret."
+    },
+    {
+      "name": "jwt.expiration",
+      "type": "java.lang.String",
+      "description": "Description for jwt.expiration."
+    },
+    {
+      "name": "jwt.tokenHead",
+      "type": "java.lang.String",
+      "description": "Description for jwt.tokenHead."
     }
   ]
 }

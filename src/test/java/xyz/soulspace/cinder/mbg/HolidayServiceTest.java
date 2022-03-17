@@ -7,12 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import xyz.soulspace.cinder.generator.entity.Holiday;
-import xyz.soulspace.cinder.generator.mapper.HolidayMapper;
-import xyz.soulspace.cinder.generator.service.HolidayService;
+import xyz.soulspace.cinder.api.entity.Holiday;
+import xyz.soulspace.cinder.api.mapper.HolidayMapper;
+import xyz.soulspace.cinder.api.service.HolidayService;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.Calendar;
 

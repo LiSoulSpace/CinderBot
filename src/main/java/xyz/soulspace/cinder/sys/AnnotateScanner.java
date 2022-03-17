@@ -12,13 +12,11 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author MikuLink
- * @date 2020/12/15 16:10
- * for the Reisen
  * <p>
  * 扫描自定义注解
  * <p>
  * 也可以使用反射框架Reflections
+ * @author soulspace
  */
 @Component
 public class AnnotateScanner implements ApplicationListener<ContextRefreshedEvent> {

@@ -9,6 +9,9 @@ build/
 logs/
 cache/
 deviceInfo.json
+src/main/resources/application-dev.yml
+src/main/resources/application.properties
+src/main/resources/application-test.yml
 
 ### STS ###
 .apt_generated

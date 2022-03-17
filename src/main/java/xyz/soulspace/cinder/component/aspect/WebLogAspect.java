@@ -37,7 +37,7 @@ import java.util.Map;
 public class WebLogAspect {
     private static final Logger LOGGER = LoggerFactory.getLogger(WebLogAspect.class);
 
-    @Pointcut("execution(public * xyz.soulspace.cinder.controller.*.*(..)) || execution(public * xyz.soulspace.cinder.generator.controller.*.*(..))")
+    @Pointcut("execution(public * xyz.soulspace.cinder.controller.*.*(..)) || execution(public * xyz.soulspace.cinder.api.controller.*.*(..))")
     public void webLog() {
     }
 

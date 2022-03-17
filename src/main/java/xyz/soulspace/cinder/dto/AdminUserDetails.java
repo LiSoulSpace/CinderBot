@@ -3,8 +3,8 @@ package xyz.soulspace.cinder.dto;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import xyz.soulspace.cinder.pojo.UmsAdmin;
-import xyz.soulspace.cinder.pojo.UmsPermission;
+import xyz.soulspace.cinder.api.entity.Admin;
+import xyz.soulspace.cinder.api.entity.Resource;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,19 +15,20 @@ import java.util.stream.Collectors;
  */
 
 public class AdminUserDetails implements UserDetails {
-    private UmsAdmin umsAdmin;
-    private List<UmsPermission> permissionList;
-    public AdminUserDetails(UmsAdmin umsAdmin, List<UmsPermission> permissionList) {
+    //后台用户
+    private Admin umsAdmin;
+    //拥有资源列表
+    private List<Resource> resourceList;
+    public AdminUserDetails(Admin umsAdmin,List<Resource> resourceList) {
         this.umsAdmin = umsAdmin;
-        this.permissionList = permissionList;
+        this.resourceList = resourceList;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        //返回当前用户的权限
-        return permissionList.stream()
-                .filter(permission -> permission.getValue()!=null)
-                .map(permission ->new SimpleGrantedAuthority(permission.getValue()))
+        //返回当前用户的角色
+        return resourceList.stream()
+                .map(role ->new SimpleGrantedAuthority(role.getId()+":"+role.getName()))
                 .collect(Collectors.toList());
     }
 

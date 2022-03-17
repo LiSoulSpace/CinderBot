@@ -89,9 +89,9 @@ public class CinderBot implements ApplicationRunner {
 
         // 这个和picbotx 还是不太一样 那个不会占用主线程
         // 这里必须要启新线程去跑bot 不然会占用主线程
-//        new Thread(() -> {
-//            bot.join();
-//        }).start();
+        new Thread(() -> {
+            bot.join();
+        }).start();
 //        MiraiConsoleTerminalLoader.main(new String[]{});
     }
 }

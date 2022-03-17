@@ -12,10 +12,7 @@ import org.springframework.util.PathMatcher;
 import javax.annotation.PostConstruct;
 import java.util.*;
 
-/**
- * 动态权限数据源，用于获取动态权限规则
- */
-@Component
+
 public class DynamicSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
 
     private static Map<String, ConfigAttribute> configAttributeMap = null;
