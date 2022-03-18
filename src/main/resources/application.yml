@@ -1,0 +1,36 @@
+spring:
+  test:
+    database:
+      replace: auto_configured
+  profiles:
+    active: dev
+redis:
+  database: mall
+  key:
+    admin: 'ums:admin'
+    resourceList: 'ums:resourceList'
+  expire:
+    common: 86400 # 24小时
+
+secure:
+  ignored:
+    urls: #安全路径白名单
+      - /swagger-ui/**
+      - /swagger-ui
+      - /swagger-resources/**
+      - /swagger/**
+      - /api-docs
+      - /**/v2/api-docs
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /**/*.ico
+      - /webjars/springfox-swagger-ui/**
+      - /actuator/**
+      - /druid/**
+      - /druid
+      - /api/admin/login
+      - /api/admin/register
+      - /api/admin/info
+      - /api/admin/logout
+      - /minio/upload
